@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="flip-v" transform="translate(-7)">
+    <path id="Caminho_1483" data-name="Caminho 1483" d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Z" transform="translate(5 -2)" fill="#bed1ea" opacity="0.65"/>
+    <path id="Caminho_1472" data-name="Caminho 1472" d="M19.205,10.205,16,7v6.41Z" transform="translate(-0.359 -0.359)" fill="#8aa2c3"/>
+    <path id="Caminho_1473" data-name="Caminho 1473" d="M15.641,13.692A.641.641,0,0,1,15,13.051V6.641a.641.641,0,0,1,1.094-.453L19.3,9.393a.641.641,0,0,1,0,.906L16.094,13.5A.64.64,0,0,1,15.641,13.692Zm.641-5.5V11.5L17.94,9.846Z" transform="translate(0)" fill="#8aa2c3"/>
+  </g>
+</svg>

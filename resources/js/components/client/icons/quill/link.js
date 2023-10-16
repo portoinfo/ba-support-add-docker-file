@@ -1,0 +1,3 @@
+const link = '<svg xmlns="http://www.w3.org/2000/svg" width="17.742" height="21.222" viewBox="0 0 17.742 21.222"> <g id="link-h" transform="translate(17.742 4.754) rotate(120)"> <path id="Caminho_462" data-name="Caminho 462" d="M7.606,9.508H4.754A4.754,4.754,0,0,1,4.754,0H7.606a.951.951,0,0,1,0,1.9H4.754a2.852,2.852,0,0,0,0,5.7H7.606a.951.951,0,0,1,0,1.9Zm6.655,0H11.41a.951.951,0,0,1,0-1.9h2.852a2.852,2.852,0,0,0,0-5.7H11.409a.951.951,0,0,1,0-1.9h2.852a4.754,4.754,0,0,1,0,9.508Z" transform="translate(0 0)" fill="#404040"/> <path id="Caminho_463" data-name="Caminho 463" d="M6.655,1.9H.951a.951.951,0,0,1,0-1.9h5.7a.951.951,0,0,1,0,1.9Z" transform="translate(5.705 3.803)" fill="#404040"/> </g> </svg>';
+
+export default link;

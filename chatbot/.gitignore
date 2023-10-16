@@ -1,0 +1,24 @@
+# Arquivos de compilação
+*.pyc
+*.pyo
+*.pyd
+*.cfg
+*.model
+*.pkl
+
+# Ambientes virtuais
+venv/
+env/
+ENV/
+
+# Arquivos de configuração
+.env
+settings.ini
+
+# Dependências instaladas com pip
+/Lib/
+/Scripts/
+/lib64/
+/.idea
+/__pycache__
+Tools/Company/BA/MB/PT/intents.json

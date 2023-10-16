@@ -1,0 +1,27 @@
+/* Badges */
+
+.ba-badge{
+    background-color: $light14;
+    color: $light15;
+    font-size: .55rem;
+    padding: .2rem .6rem;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    width: max-content;
+    &.ba-green::before,
+    &.ba-red::before{
+        content: '';
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+    }
+    &.ba-green::before{
+        background-color: $green1;
+    }
+    &.ba-red::before{
+        background-color: $red1;
+    }
+}

@@ -1,0 +1,78 @@
+// Loader
+.modal-loading-overlay {
+    display: none;
+    position: fixed;
+    z-index: 9002;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(245, 248, 250, 0.98);
+    cursor: wait;
+  }
+  
+  body.loading .modal-loading-overlay {
+    overflow: hidden;
+  }
+  
+  body.loading .modal-loading-overlay {
+    display: block;
+  }
+  
+  .loader-spinna {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 2;
+    background-color: #0294ff70;
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 25px);
+  }
+  
+  .loader-spinna:before,
+  .loader-spinna:after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .loader-spinna:before {
+    border: 3px dotted rgba(8, 30, 63, 0);
+    box-shadow: inset 0 0 0 3em #71c3ff;
+  }
+  
+  .loader-spinna:after {
+    z-index: 0;
+    border-width: 10px;
+    border-style: solid;
+    -o-border-image: linear-gradient(to bottom, #19a6cf 0%, transparent 100%);
+    border-image: linear-gradient(to bottom, #5541ff 0%, transparent 100%);
+    border-image-slice: 0 0 0 20;
+    -webkit-animation: spinnaRot 0.4s infinite linear;
+    animation: spinnaRot 0.4s infinite linear;
+  }
+  
+  @-webkit-keyframes spinnaRot {
+    to {
+      -webkit-transform: rotate(359deg);
+      transform: rotate(359deg);
+    }
+  }
+  
+  @keyframes spinnaRot {
+    to {
+      -webkit-transform: rotate(359deg);
+      transform: rotate(359deg);
+    }
+  }
+  

@@ -1,0 +1,15 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'loader';
+@import 'variables';
+@import 'custom';
+@import 'vselect';
+@import 'icons';
+
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import "~vue-snotify/styles/material";
+@import '~material-design-icons-iconfont/src/material-design-icons';

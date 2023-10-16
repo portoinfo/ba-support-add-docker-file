@@ -1,0 +1,102 @@
+/* Flex & Grid */
+
+.ba-flex{
+    display: flex;
+}
+
+.ba-grid{
+    display: grid;
+}
+
+// Align Items
+.ba-ai-center{
+    align-items: center;
+}
+
+.ba-ai-baseline{
+    align-items: baseline;
+}
+
+.ba-ai-start{
+    align-items: start;
+}
+
+.ba-ai-end{
+    align-items: end;
+}
+
+// Flex Wrap
+.ba-f-wrap{
+    flex-wrap: wrap;
+}
+
+.ba-f-nowrap{
+    flex-wrap: nowrap;
+}
+
+// Flex Direction
+.ba-f-column{
+    flex-direction: column;
+}
+
+.ba-f-row{
+    flex-direction: row;
+}
+
+// Justify Content
+.ba-jc-center{
+    justify-content: center;
+}
+
+.ba-jc-sb{
+    justify-content: space-between;
+}
+
+.ba-jc-sa{
+    justify-content: space-around;
+}
+
+.ba-jc-se{
+    justify-content: space-evenly;
+}
+
+.ba-jc-fs{
+    justify-content: flex-start;
+}
+
+.ba-jc-fe{
+    justify-content: flex-end;
+}
+
+// Gap
+.ba-gp-02{
+    gap: .2rem;
+}
+
+.ba-gp-04{
+    gap: .4rem;
+}
+
+.ba-gp-06{
+    gap: .6rem;
+}
+
+.ba-gp-08{
+    gap: .8rem;
+}
+
+.ba-gp-1{
+    gap: 1rem;
+}
+
+.ba-gp-2{
+    gap: 2rem;
+}
+
+.ba-gp-3{
+    gap: 3rem;
+}
+
+.ba-gp-4{
+    gap: 4rem;
+}

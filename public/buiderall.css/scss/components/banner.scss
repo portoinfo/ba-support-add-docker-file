@@ -1,0 +1,117 @@
+/* Banners */
+
+.ba-banner{
+    background: linear-gradient(92.25deg, $rgba16 31.46%, $rgba15 85.86%);
+    padding: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    height: 250px;
+    position: relative;
+    box-sizing: border-box;
+    transition: height 1s ease;
+    .ba-span{
+        color: $white1;
+    }
+    .ba-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 0;
+        .ba-image{
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+        img{
+            object-fit:cover;
+        }
+        .ba-header-left{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            .ba-icon{
+                width: 45px;
+                height: 45px;
+                background-color: $white1;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                svg{
+                    max-width: 45px;
+                    max-height: 45px;
+                    border-radius: 50%;
+                    fill: $blue1;
+                }
+            }
+            .ba-span{
+                font-size: 1.5rem;
+                font-weight: 400;
+            }
+        }
+        .ba-label{
+            background-color: $black23;
+            width: 25px;
+            height: 25px;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            color: $dark4;
+            background-image: url(https://cheetah.builderall.com/franquias/2/7291108/editor-html/11332973.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+    .ba-input-status{
+        display: none;
+        &:checked ~ .ba-header > .ba-label{
+            transform: rotate(180deg);
+            transition: .4s;
+        }
+    }
+    .ba-tool-description{
+        z-index: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        animation-name: showOpacity;
+        animation-duration: .4s;
+        opacity: 1;
+        .ba-span:first-child{
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+        .ba-span:last-child{
+            font-size: 1rem;
+            font-weight: 200;
+        }
+    }
+}
+.ba-banner:has(.ba-input-status:checked){
+    height: 144px;
+    .ba-tool-description{
+        animation-name: hideOpacity;
+        animation-duration: .4s;
+        opacity: 0;
+    }
+    .ba-app-wrapper{
+        margin-top: 4.6rem !important;
+    }
+}
+
+
+@keyframes hideOpacity {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@keyframes showOpacity {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

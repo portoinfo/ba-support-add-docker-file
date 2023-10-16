@@ -1,0 +1,3 @@
+const align = '<svg xmlns="http://www.w3.org/2000/svg" width="18.169" height="15.669" viewBox="0 0 18.169 15.669"> <path id="Caminho_2986" data-name="Caminho 2986" d="M.853,1.205H19.022V2.659H.853V1.205Zm0,14.216H19.022v1.453H.853V15.421Zm0-2.843H17.569v1.453H.853V12.578Zm0-2.843H17.569v1.453H.853V9.735Zm0-2.843H12.481V8.345H.853V6.892Zm0-2.843H10.3V5.5H.853V4.049Z" transform="translate(-0.853 -1.205)" fill="#404040" fill-rule="evenodd"/> </svg>';
+
+export default align;

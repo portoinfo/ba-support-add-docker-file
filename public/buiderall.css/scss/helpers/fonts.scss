@@ -1,0 +1,112 @@
+/* Fonts */
+
+
+// Mulish
+$mulish: "Mulish";
+
+// Montserrat
+$montserrat: "Montserrat";
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 2.25rem;
+}
+
+h4{
+    font-size: 2rem;
+}
+
+h5{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+h6{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+p{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+hr{
+    border-top: 1px solid $black18;
+}
+
+// Class
+.ba-mulish-100{
+    font-weight: 100;
+}
+.ba-mulish-200{
+    font-weight: 200;
+}
+.ba-mulish-300{
+    font-weight: 300;
+}
+.ba-mulish-400{
+    font-weight: 400;
+}
+.ba-mulish-500{
+    font-weight: 500;
+}
+.ba-mulish-600{
+    font-weight: 600;
+}
+.ba-mulish-700{
+    font-weight: 700;
+}
+.ba-mulish-800{
+    font-weight: 800;
+}
+.ba-mulish-900{
+    font-weight: 900;
+}
+.ba-mulish-bold{
+    font-weight: bold;
+}
+.ba-montserrat-100{
+    font-weight: 100;
+}
+.ba-montserrat-200{
+    font-weight: 200;
+}
+.ba-montserrat-300{
+    font-weight: 300;
+}
+.ba-montserrat-400{
+    font-weight: 400;
+}
+.ba-montserrat-500{
+    font-weight: 500;
+}
+.ba-montserrat-600{
+    font-weight: 600;
+}
+.ba-montserrat-700{
+    font-weight: 700;
+}
+.ba-montserrat-800{
+    font-weight: 800;
+}
+.ba-montserrat-900{
+    font-weight: 900;
+}
+.ba-montserrat-bold{
+    font-weight: bold;
+}
+  

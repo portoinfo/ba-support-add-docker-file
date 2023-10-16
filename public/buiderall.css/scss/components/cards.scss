@@ -1,0 +1,186 @@
+/* Cards */
+
+.ba-card{
+    background-color: $white1;
+    padding: .8rem;
+    box-shadow: 0px 4px 6px -4px $rgba7, 0px 8px 8px -4px $rgba8;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    box-sizing: border-box;
+    .ba-image{
+        border-radius: 20px;
+        width: 100%;
+    }
+    .ba-top{
+        width: 100%;
+        gap: 1rem;
+        .ba-title{
+            border-bottom: 1px solid $blue18;
+            color: $dark5;
+            display: flex;
+        }
+        &:has(.ba-box-items){
+            display: grid;
+            grid-template-columns: 1fr auto;
+        }
+    }
+    .ba-title{
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    .ba-description{
+        font-size: .8rem;
+        color: $black13;
+    }
+    .ba-hr-row{
+        width: 100%;
+    }
+    .ba-hr-column{
+        height: 100%;
+        min-height: 50px;
+    }
+
+    // Options
+    &.ba-row{
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 630px;
+        .ba-content{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+    }
+
+    &.ba-blue{
+        background-color: $blue17;
+        border: 1px solid $blue18;
+    }
+
+    &.ba-no-shadow{
+        box-shadow: none;
+    }
+
+    &.ba-no-padding{
+        padding: 0;
+        .ba-image{
+            border-radius: 20px 20px 0 0;
+        }
+        :is(.ba-title,.ba-description){
+            margin: 0 .8rem;
+        }
+        .ba-btn{
+            margin: 0 .8rem .8rem .8rem;
+        }
+    }
+
+    &.ba-statistics{
+        display: flex;
+        flex-direction: column;
+        gap: .6rem;
+        .ba-top{
+            display: flex;
+            align-items: center;
+            gap: .4rem;
+            .ba-icon{
+                background-color: $light20;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                svg{
+                    fill: $blue1;
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+            .ba-title{
+                border-bottom: none;
+                font-size: .75rem;
+                font-weight: 400;
+                color: $dark6;
+            }
+        }
+        .ba-content{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            width: 100%;
+            .ba-data{
+                color: $dark5;
+                font-size: 2.7rem;
+                font-weight: 600;
+            }
+            .ba-icon{
+                svg{
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+            &.ba-green{
+                .ba-data{
+                    color: $green19;
+                }
+                .ba-icon{
+                    svg{
+                        fill: $green19;
+                    }
+                }
+            }
+            &.ba-red{
+                .ba-data{
+                    color: $red1;
+                }
+                .ba-icon{
+                    svg{
+                        fill: $red1;
+                    }
+                }
+            }
+        }
+        .ba-bottom{
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            min-height: 1rem;
+            .ba-text{
+                font-size: .8rem;
+                color: $dark6;
+            }
+            .ba-green{
+                color: $green1 !important;
+            }
+            .ba-red{
+                color: $red1 !important;
+            }
+        }
+    }
+
+    // Sizes
+    &.ba-100{
+        width: 100px;
+    }
+
+    &.ba-200{
+        width: 200px;
+    }
+
+    &.ba-300{
+        width: 300px;
+    }
+
+    &.ba-400{
+        width: 400px;
+    }
+
+    &.ba-500{
+        width: 500px;
+    }
+}

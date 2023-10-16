@@ -1,0 +1,110 @@
+{"intents":  [
+    {"tag":  "alternative",
+        "patterns": ["Palava em portugues"],
+        "responses": ["Sorry I didn't understand what you mean, I'll transfer it to an attendant"]
+    },
+    {"tag": "greetings",
+        "patterns":  ["hi", "hello", "Hi", "Hello", "HI", "i have a problem", "I have a question", "I need help", "Good Morning", "Good afternoon", "Good evening", "good morning", "good afternoon", "good evening"],
+        "responses":  ["Hello, How can I help you?", "Hi, Can you please describe what you need?", "Hello We are here to help, what I can do for you"]
+    },
+    {"tag": "mb_purchesed",
+        "patterns":  [" - FERRAMENTAMAILINGBOSS I purchased the Mailingboss Lifetime offer", "Will I still have access to Mailingboss 5.0?", "Can I transfer subscribers from Mailingboss 4.0 to Mailingboss 5.0?", "Can I import subscribers from Mailingboss 4.0 to Mailingboss 5.0?", "Can I upgrade my plan?"],
+        "responses":  ["Users that purchased the Mailingboss Lifetime offer will not have access to Mailingboss 5.0 - so therefore they will not be able to import / transfer subscribers from Mailingboss 4.0 to 5.0. These users will only have access to Mailingboss 4.0, even after December 31, 2022. Users that acquired the Mailingboss Lifetime offer, and would like to have access to Mailingboss 5.0, are more than welcome to upgrade to a subscription plan that we currently offer: https://builderall.com/plans"]
+    },
+    {"tag": "mb_domain",
+        "patterns":  [" - FERRAMENTAMAILINGBOSS If my domain is connected to a website outside of Builderall / doesn't have Builderall's name servers, can I still add and verify my domain in Mailingboss 5.0?", "I have my domain connected to a outside website, how add to Mailingboss ?"],
+        "responses":  ["If your domain is connected to a website outside of Builderall, or if it does not have Builderall's name servers, you can still add it in Mailingboss by configuring the Mailingboss DNS records with your domain provider. This video will show you where you'd find these DNS records in your Mailingboss 5.0 account: https://www.loom.com/share/f5cda1dd85384c2fb25f00404b85b3dc"]
+    },
+    {"tag": "mb_domain2",
+        "patterns":  [" - FERRAMENTAMAILINGBOSS Why can't verify my sender domain?", "How verify my sender domain", "Verify sender domain", "sender domain"],
+        "responses":  ["Here is a video that might help: https://www.loom.com/share/ba92e12c00cf4374be6fe36a77fdda78"]
+    },
+    {"tag": "mb_sender_email",
+        "patterns":  [" - FERRAMENTAMAILINGBOSS How to verify a sender email", "Verify a sender email", "sender email"],
+        "responses":  ["Maybe this will help: https://www.youtube.com/watch?v=f6-JfrV7heQ&list=WL&index=21"]
+    },
+    {"tag":  "mb_ip",
+        "patterns":  [" - FERRAMENTAMAILINGBOSS Do I have my own dedicated sending IP or a shared IP?", "How works the sending IP", "sending IP"],
+        "responses":  ["Builderall uses a shared sending IP."]
+    },
+    {"tag":  "mb_subdmoain_sender",
+        "patterns": [" - FERRAMENTAMAILINGBOSS Can I add a subdomain as a sender domain?", "A subdomain can be a sender domain?", "subdomian as a sender domain"],
+        "responses": ["Only primary domains can be configured as sender domains (example: vitaminshop.com). Mailingboss currently does not support subdomains as sender domains (example of a subdomain that is not accepted: shop.vitaminshop.com)"]
+    },
+    {"tag":  "mb_domain_extension",
+        "patterns": [" - FERRAMENTAMAILINGBOSS Will Mailingboss 5.0 accept / be compatible with all the domain extensions? Such as: .one, .pro, .vip, etc?", "Will Mailingboss 5.0 accept / be compatible with all the domain extensions?", "Will Mailingboss 5.0 accept all the domain extensions?"],
+        "responses": ["There aren't any specific limitations for domain extensions in Mailingboss 5.0 (examples: .com, .org, .net)"]
+    },
+    {"tag":  "mb_trial",
+        "patterns": [" - FERRAMENTAMAILINGBOSS I'm in the 14-day trial (signed up with or without the credit card), why can't I send out my campaigns? My campaigns are not being delivered."],
+        "responses": ["Users in the 14-day trial will not have the option to send out email campaigns. They can upgrade to a paid plan, in order to have access to that."]
+    },
+    {"tag":  "mb_email_sequence",
+        "patterns": [" - FERRAMENTAMAILINGBOSS How to create an email sequence?", "I want create an email sequence", "email sequence"],
+        "responses": ["Here is, this video will help: https://www.youtube.com/watch?v=Ir65-UnQyrc&list=WL&index=13"]
+    },
+    {"tag":  "mb_campaign_tag",
+        "patterns": [" - FERRAMENTAMAILINGBOSS How to send a campaign to subscribers that have a specific tag", "send a campaign to subscribers that have a specific tag"],
+        "responses": ["We are working in this solution"]
+    },
+    {"tag":  "mb_import_from_mb4",
+        "patterns": [" - FERRAMENTAMAILINGBOSS How to import campaigns and sequences from Mailingboss 4.0 to Mailingboss 5.0", "import from Mailingboss 4.0 to Mailingboss 5.0"],
+        "responses": ["Here some link maybe will help: https://knowledgebase.builderall.com/docs/how-to-import-campaigns-sequences-from-mailingboss-4-0-to-mailingboss-5-0"]
+    },
+    {"tag":  "mb_HTML_code",
+        "patterns": [" - FERRAMENTAMAILINGBOSS Where can I add HTML coding in my template?", "Where can I edit my campaign's HTML coding?", "How add HTML in a template"],
+        "responses": ["Follow these steps https://www.loom.com/share/6c09dd291ff64bcd9129e84817c2ef11"]
+    },
+    {"tag":  "mb_HTML_type",
+        "patterns": [" - FERRAMENTAMAILINGBOSS What types of HTML coding/scripts are compatible with Mailingboss 5.0 (for me to include in my campaign)?", "What types of HTML coding are compatible with Mailingboss 5.0 (for me to include in my campaign)?", "What types of HTML scripts are compatible with Mailingboss 5.0?"],
+        "responses": ["Although Mailingboss does have a campaign HTML editor (which allows users to edit the campaign template's HTML coding/add HTML code), and as there are several types of coding/scripts, we cannot advise on or guarantee the code's compatibility as we do not provide support for external coding. Users are more than welcome to test out their code in the HTML editor, at their own discretion. With that being said, most types of basic HTML coding should be compatible with the HTML editor."]
+    },
+    {"tag":  "mb_preview_campaign",
+        "patterns": [" - FERRAMENTAMAILINGBOSS How can I preview an email campaign?"],
+        "responses": ["Here is the possible solition for this: https://www.loom.com/share/666f3025edc74db18f19ebd5cc213378"]
+    },
+    {"tag":  "mb_font",
+        "patterns": [" - FERRAMENTAMAILINGBOSS Can I add a custom font to my email campaign/template?", "How add a custom font to my email campaign?", "How can I add a custom font to my email?"],
+        "responses": ["At this time, there isn't an option to add new/custom fonts in Mailingboss."]
+    },
+    {"tag":  "mb_videos",
+        "patterns": [" - FERRAMENTAMAILINGBOSS Can I embed videos MailingBoss 5.0 campaigns?", "How embed videos on MalignBoss", "Can I embed videos MB 5.0 campaigns?"],
+        "responses": ["There isn’t an option to embed videos in email campaigns. As an alternative, you can add a button/link in your email campaign to redirect the subscriber to the video. Or perhaps include the video’s thumbnail as an image in your campaign, that would be linked with the video’s URL."]
+    },
+    {"tag":  "mb_sub_id",
+        "patterns": [" - FERRAMENTAMAILINGBOSS How to locate your subscriber list's ID", "Where is located the subscriber list ID"],
+        "responses": ["Here is a video that might help: https://www.loom.com/share/dbe7a4c17a9d4e1c8b24a7422b866496"]
+    },
+    {"tag": "mb_email_field",
+        "patterns":  [" - FERRAMENTAMAILINGBOSS I don't need the email field, can I remove it?", "what is the email field used for ?"],
+        "responses":  ["The email field is required in Mailingboss, there isn't an option to remove it as that app is intended for email marketing"]
+    },
+    {"tag":  "mb_filds",
+        "patterns": [" - FERRAMENTAMAILINGBOSS How to manage the subscriber fields (customize / add / remove) | managing what information you'll collect from your subscribers", "How to manage the subscriber fields customize", "managing what information you'll collect from your subscribers"],
+        "responses": ["I think we have this solution in a video to help: https://www.youtube.com/watch?v=zgwfWtuiwQU&list=WL&index=11"]
+    },
+    {"tag":  "mb_url",
+        "patterns": [" - FERRAMENTAMAILINGBOSS How can I manually generate a subscribe URL to send it to someone?", "How can I manually generate a unsubscribe URL to send it to someone?", "How can I manually generate a URL to send it to someone?"],
+        "responses": ["Here is a video that might help: https://www.loom.com/share/da9cfb379d964280b30d17e2e62b0325"]
+    },
+    {"tag":  "mb_opt_in",
+        "patterns": [" - FERRAMENTAMAILINGBOSS What is double and single opt-in?", "What is double opt-in?", "What is single opt-in?"],
+        "responses": ["There are two types of opt-in settings for your subscriber list in Mailingboss: DOUBLE OPT-IN and SINGLE OPT-IN. DOUBLE OPT-IN lists requires the subscribers to confirm their subscription via a confirmation link that will be sent to their email, in order for them to begin receiving any email campaigns that you have configured. SINGLE OPT-IN lists do not require the subscriber to confirm their subscription, so they will automatically begin to receive email campaigns upon subscribing. The default opt-in setting for all subscriber lists is DOUBLE OPT-IN. This is due to the fact that it can enhance your sender email’s reputation and deliverability, as users that manually confirm will most likely be interested in and engage in the content you’re promoting.You can change your opt-in setting to use SINGLE OPT-IN."]
+    },
+    {"tag":  "wh_opts_ins",
+        "patterns": [" - WHATSAPPLAUNCH What is double single and opt-in?", "What is double opt-in?", "What is single opt-in?"],
+        "responses": ["There are two types of opt-in settings for your subscriber list in WhatsApp Launch: DOUBLE OPT-IN and SINGLE OPT-IN. DOUBLE OPT-IN lists requires the subscribers to confirm their subscription via a confirmation link that will be sent to their email, in order for them to begin receiving any email campaigns that you have configured. SINGLE OPT-IN lists do not require the subscriber to confirm their subscription, so they will automatically begin to receive email campaigns upon subscribing. The default opt-in setting for all subscriber lists is DOUBLE OPT-IN. This is due to the fact that it can enhance your sender email’s reputation and deliverability, as users that manually confirm will most likely be interested in and engage in the content you’re promoting.You can change your opt-in setting to use SINGLE OPT-IN."]
+    },
+    {"tag":  "wht_url",
+        "patterns": [" - WHATSAPPLAUNCH How can I manually generate a subscribe URL to send it to someone?", "How can I manually generate a unsubscribe URL to send it to someone?", "How can I manually generate a URL to send it to someone?"],
+        "responses": ["Here is a video that might help with this WhastApp Problem: https://www.loom.com/share/da9cfb379d964280b30d17e2e62b0325"]
+    },
+    {"tag":  "wht_filds_camp",
+        "patterns": [" - WHATSAPPLAUNCH How to manage the subscriber fields (customize / add / remove) | managing what information you'll collect from your subscribers", "How to manage the subscriber fields customize", "managing what information you'll collect from your subscribers"],
+        "responses": ["I think we have this solution in a video to help with this WhatsApp problem: https://www.youtube.com/watch?v=zgwfWtuiwQU&list=WL&index=11"]
+    },
+    {"tag":  "mb_videos",
+        "patterns": [" - WHATSAPPLAUNCH Can I embed videos MailingBoss 5.0 campaigns?", "How embed videos on MalignBoss", "Can I embed videos MB 5.0 campaigns?"],
+        "responses": ["There isn’t an option to embed videos in WhatsApp Groups. As an alternative, you can add a button/link in your email campaign to redirect the subscriber to the video. Or perhaps include the video’s thumbnail as an image in your campaign, that would be linked with the video’s URL."]
+    }
+]}

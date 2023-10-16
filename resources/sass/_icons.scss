@@ -1,0 +1,213 @@
+@mixin icon ($name, $ext: 'svg') {
+    background-image: url('../images/icons/#{$name}.#{$ext}')
+}
+
+i.bbi {
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    display: inline-block;
+    background-repeat: no-repeat;
+
+    &.bbi-logout {@include icon('logout')}
+    &.bbi-gear { @include icon('gear')}
+    &.bbi-language {@include icon('language')}
+    &.bbi-menu-agenda {@include icon('menu-agenda')}
+    &.bbi-menu-calendars {@include icon('menu-calendars')}
+    &.bbi-menu-dashboard {@include icon('menu-dashboard')}
+    &.bbi-menu-hosts {@include icon('menu-hosts')}
+    &.bbi-menu-backoffice {@include icon('menu-backoffice')}
+    &.bbi-menu-burger {@include icon('menu-burger')}
+    &.bbi-menu-burger-open {@include icon('menu-burger-open')}
+    &.bbi-report-problem {@include icon('report_problem')}
+    &.bbi-done {@include icon('done')}
+    &.bbi-message-more {@include icon('message_more')}
+    &.bbi-question-answer {@include icon('question_answer')}
+    &.bbi-query-builder {@include icon('query_builder')}
+    &.bbi-keyboard-arrow-down {@include icon('keyboard_arrow_down')}
+    &.bbi-keyboard-arrow-right {@include icon('keyboard_arrow_right')}
+    &.bbi-message-more-white {@include icon('message_more_white')}
+    &.bbi-user {@include icon('user')}
+    &.bbi-email {@include icon('email')}
+    &.bbi-phone {@include icon('phone')}
+    &.bbi-users {@include icon('users')}
+    &.bbi-clock-nine {@include icon('clock-nine')}
+    &.bbi-calendar {@include icon('calendar')}
+    &.bbi-description {@include icon('description')}
+    &.bbi-locale {@include icon('locale')}
+    &.bbi-zone {@include icon('zone')}
+    &.bbi-settings {@include icon('settings')}
+    &.bbi-upload {@include icon('upload')}
+    &.bbi-attach-file {@include icon('attach_file')}
+    &.bbi-my-group {@include icon('my-calendars-group')}
+    &.bbi-save-as {@include icon('save_as')}
+    &.bbi-checkbox {@include icon('field-type-checkbox')}
+    &.bbi-people {@include icon('people')}
+    &.bbi-peoples {@include icon('peoples')}
+    &.bbi-connect-integrations {@include icon('connect_integrations')}
+    &.bbi-attendants {@include icon('attendants')}
+    &.bbi-mid-ticket {@include icon('mid_ticket')}
+
+
+
+    
+    /*&.bbi-logout {@include icon('logout')}
+    &.bbi-submit {@include icon('submit')}
+    &.bbi-calendar {@include icon('calendar')}
+    &.bbi-calendar-blue {@include icon('calendar-blue')}
+    &.bbi-calendar-desc {@include icon('calendar-desc')}
+    &.bbi-calendar-opacity {@include icon('calendar-opacity')}
+    &.bbi-menu-burger {@include icon('menu-burger')}
+    &.bbi-menu-burger-open {@include icon('menu-burger-open')}
+    &.bbi-check-purple {@include icon('checklist-purple')}
+    &.bbi-calendar-new {@include icon('calendar-new')}
+    &.bbi-save {@include icon('save')}
+    &.bbi-plus {@include icon('plus')}
+    &.bbi-trash {@include icon('trash')}
+    &.bbi-link {@include icon('link')}
+    &.bbi-copied {@include icon('copied')}
+    &.bbi-copy {@include icon('copy')}
+    &.bbi-eye { @include icon('eye')}
+    &.bbi-gear { @include icon('gear')}
+    &.bbi-edit {@include icon('edit')}
+    &.bbi-move {@include icon('move')}
+    &.bbi-upload {@include icon('upload')}
+    &.bbi-email-new { @include icon('email-new')}
+    &.bbi-success-circle { @include icon('ok-circle')}
+    &.bbi-clock {@include icon('clock')}
+    &.bbi-clock-history {@include icon('clock-history')}
+    &.bbi-accept {@include icon('accept')}
+    &.bbi-deny {@include icon('deny')}
+    &.bbi-people {@include icon('people')}
+    &.bbi-code {@include icon('code')}
+    &.bbi-schedule {@include icon('schedule')}
+    &.bbi-arrow-right {@include icon('arrow-right')}
+    &.bbi-unavaliable-calendar {@include icon('unavaliable-calendar')}
+    &.bbi-language {@include icon('language')}
+    &.bbi-whatsapp {@include icon('whatsapp')}
+    &.bbi-zoom {@include icon('zoom')}
+    &.bbi-clock-blue-gray {@include icon('clock-blue-gray')}
+    &.bbi-timezone {@include icon('timezone')}
+    &.bbi-play-white {@include icon('play-white')}
+    &.bbi-email {@include icon('email')}
+    &.bbi-smartphone {@include icon('smartphone')}
+	&.bbi-bell {@include icon('bell')}
+	&.bbi-diamond {@include icon('diamond')}
+    &.bbi-subscribers {@include icon('subscribers')}
+    &.bbi-share {@include icon('share')}
+
+    &.bbi-front-card-clock {@include icon('front-card-clock')}
+    &.bbi-front-classroom-clock {@include icon('front-classroom-clock')}
+    &.bbi-front-card-calendar {@include icon('front-card-calendar')}
+    &.bbi-front-card-arrow {@include icon('front-card-arrow')}
+    &.bbi-front-card-duration {@include icon('front-card-duration')}
+
+    &.bbi-step-complete {@include icon('step-complete')}
+    &.bbi-step-incomplete {@include icon('step-incomplete')}
+    &.bbi-step-invalid {@include icon('step-invalid')}
+    &.bbi-step-editing {@include icon('step-editing')}
+
+    &.bbi-menu-agenda {@include icon('menu-agenda')}
+    &.bbi-menu-calendars {@include icon('menu-calendars')}
+    &.bbi-menu-dashboard {@include icon('menu-dashboard')}
+    &.bbi-menu-hosts {@include icon('menu-hosts')}
+    &.bbi-menu-cheetah {@include icon('menu-cheetah')}
+    &.bbi-menu-backoffice {@include icon('menu-backoffice')}
+    &.bbi-menu-megaphone {@include icon('menu-megaphone')}
+    &.bbi-menu-integrations {@include icon('menu-integrations')}
+
+    &.bbi-dropdown-delete {@include icon('dropdown-delete')}
+    &.bbi-dropdown-subscribers {@include icon('dropdown-subscribers')}
+    &.bbi-dropdown-code {@include icon('dropdown-code')}
+    &.bbi-dropdown-view {@include icon('dropdown-view')}
+	&.bbi-dropdown-edit {@include icon('dropdown-edit')}
+	&.bbi-dropdown-share {@include icon('dropdown-share')}
+
+    &.bbi-my-calendars-bb-consulta {@include icon('my-calendars-bb-consulta')}
+    &.bbi-my-calendars-bb-evento {@include icon('my-calendars-bb-evento')}
+    &.bbi-my-calendars-bb-academia {@include icon('my-calendars-bb-academia')} 
+    &.bbi-my-calendars-group {@include icon('my-calendars-group')}
+	&.bbi-my-calendars-subscribers {@include icon('my-calendars-subscribers')}
+	&.bbi-my-calendars-shared {@include icon('my-calendars-shared')}
+
+    &.bbi-field-type-text {@include icon('field-type-text')}
+    &.bbi-field-type-textarea {@include icon('field-type-textarea')}
+    &.bbi-field-type-checkbox {@include icon('field-type-checkbox')}
+    &.bbi-field-type-radio {@include icon('field-type-radio')}
+    &.bbi-field-type-select {@include icon('field-type-select')}
+    &.bbi-field-type-text {@include icon('field-type-text')}
+
+    &.bbi-arrow-left {
+        @include icon('arrow-right');
+        transform: rotate(180deg);
+    }
+    &.bbi-arrow-down {
+        @include icon('arrow-right');
+        transform: rotate(90deg);
+    }
+    &.bbi-info {
+        @include icon('info');
+        cursor: help;
+    }
+    &.bbi-close {
+        @include icon('close');
+        filter: grayscale(1) opacity(0.3);
+        transition: .3s filter;
+        &:hover {
+            filter: unset;
+        }
+    }
+    */
+
+    // sizes
+    &.bbi-30 {
+        width: 30px;
+        height: 30px;
+    }
+    &.bbi-28 {
+        width: 26px;
+        height: 26px;
+    }
+    &.bbi-26 {
+        width: 26px;
+        height: 26px;
+    }
+    &.bbi-24 {
+        width: 24px;
+        height: 24px;
+    }
+    &.bbi-22 {
+        width: 22px;
+        height: 22px;
+    }
+    &.bbi-20 {
+        width: 20px;
+        height: 20px;
+    }
+    &.bbi-18 {
+        width: 18px;
+        height: 18px;
+    }
+    &.bbi-14 {
+        width: 14px;
+        height: 14px;
+    }
+    &.bbi-100 {
+        width: 100%;
+        height: 100%;
+    }
+
+    //variants
+    &.bbi-white {
+        filter: invert(43%) sepia(9%) saturate(17%) hue-rotate(19deg) brightness(97%) contrast(92%);
+    }
+    &.bbi-center {
+        background-position: center;
+    }
+}
+
+.dropdown-item > .bbi,
+.btn > .bbi {
+    vertical-align: text-top;
+    margin-right: 6px;
+}

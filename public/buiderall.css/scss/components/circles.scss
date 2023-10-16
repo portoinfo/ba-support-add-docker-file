@@ -1,0 +1,52 @@
+/* Circles */
+
+// Mixins
+@mixin setWidthHeight($size){
+    height: $size;
+    width: $size;
+}
+
+// Circles
+.ba-circle{
+    &::before{
+        @include setWidthHeight(10px);
+        border-radius: 50%;
+        content: '';
+        display: inline-block;
+    }
+
+    // Colors
+    &.ba-green::before{
+        background-color: $green1;
+    }
+
+    &.ba-red::before{
+        background-color: $red1;
+    }
+
+    &.ba-purple::before{
+        background-color: $purple1;
+    }
+
+    &.ba-black::before{
+        background-color: $black1;
+    }
+
+    &.ba-yellow::before{
+        background-color: $yellow1;
+    }
+
+    // Sizes
+    &.ba-sm::before{
+        @include setWidthHeight(8px);
+    }
+
+    &.ba-md::before{
+        @include setWidthHeight(10px);
+    }
+
+    &.ba-lg::before{
+        @include setWidthHeight(12px);
+    }
+
+}

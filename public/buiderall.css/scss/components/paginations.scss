@@ -1,0 +1,101 @@
+/* Paginations */
+
+.ba-pagination{
+    .ba-list{
+        display: flex;
+        gap: .6rem;
+        color: $black13;
+        align-items: center;
+        .ba-nav-item{
+            color: $black13;
+            .ba-back{
+                margin-right: 1rem;
+            }
+            .ba-link{
+                font-size: .9rem;
+                padding: .6rem 1rem;
+                border-radius: 8px;
+                &:hover,&.ba-is-active{
+                    background-color: $blue14;
+                    color: $blue1;
+                }
+                &.ba-is-active{
+                    font-weight: 600;
+                }
+            }
+            .ba-next{
+                margin-left: 1rem;
+            }
+            :is(.ba-back,.ba-next){
+                display: flex;
+                align-items: center;
+                gap: .6rem;
+                font-weight: bold;
+                .ba-icon{
+                    display: flex;
+                    svg{
+                        fill: $black13;
+                    }
+                }
+                .ba-text{
+                    color: $black13;
+                }
+            }
+        }
+    }
+
+    // Sizes
+    &.ba-sm{
+        .ba-list{
+            .ba-nav-item{
+                :is(.ba-link,.ba-text){
+                    font-size: .65rem;
+                }
+                :is(.ba-back,.ba-next){
+                    .ba-icon{
+                        svg{
+                            width: 14px;
+                            height: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.ba-md{
+        .ba-list{
+            .ba-nav-item{
+                :is(.ba-link,.ba-text){
+                    font-size: 0.95rem;
+                }
+                :is(.ba-back,.ba-next){
+                    .ba-icon{
+                        svg{
+                            width: 18px;
+                            height: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.ba-lg{
+        .ba-list{
+            .ba-nav-item{
+                :is(.ba-link,.ba-text){
+                    font-size: 1.25rem;
+                }
+                :is(.ba-back,.ba-next){
+                    .ba-icon{
+                        svg{
+                            width: 22px;
+                            height: 22px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

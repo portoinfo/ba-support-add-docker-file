@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14.999" height="22.77" viewBox="0 0 14.999 22.77">
+  <g id="smartphone_phone_calendar_date_appointment" data-name="smartphone, phone, calendar, date, appointment" transform="translate(-16.19 -8)">
+    <rect id="Retângulo_782" data-name="Retângulo 782" width="14.549" height="21.534" rx="2" transform="translate(16.418 9.236)" fill="#d4e1f1"/>
+    <path id="Caminho_2711" data-name="Caminho 2711" d="M28.657,8h-9.43a2.557,2.557,0,0,0-2.557,2.557V28.213a2.557,2.557,0,0,0,2.557,2.557h9.43a2.557,2.557,0,0,0,2.557-2.557V10.557A2.557,2.557,0,0,0,28.657,8Zm1.608,18.977a1.608,1.608,0,0,1-1.608,1.608h-9.43a1.608,1.608,0,0,1-1.608-1.608V11.793a1.608,1.608,0,0,1,1.608-1.608h1.191a.863.863,0,0,1,.674.318h0a.873.873,0,0,0,.674.313h4.355a.873.873,0,0,0,.669-.313h0a.863.863,0,0,1,.678-.318h1.191a1.608,1.608,0,0,1,1.608,1.608Z" transform="translate(-0.252 0)" fill="#9ab3d5"/>
+    <path id="Caminho_2712" data-name="Caminho 2712" d="M16.366,20.91h.052v1.75h-.052a.176.176,0,0,1-.176-.176V21.062A.176.176,0,0,1,16.366,20.91Z" transform="translate(0 -6.786)" fill="#7e9abf"/>
+    <path id="Caminho_2713" data-name="Caminho 2713" d="M16.366,25.36h.052v1.727h-.052a.176.176,0,0,1-.176-.176V25.488A.176.176,0,0,1,16.366,25.36Z" transform="translate(0 -9.125)" fill="#7e9abf"/>
+    <path id="Caminho_2714" data-name="Caminho 2714" d="M.176,0H.228V1.75H.176A.176.176,0,0,1,0,1.575V.152A.176.176,0,0,1,.176,0Z" transform="translate(31.189 15.87) rotate(180)" fill="#7e9abf"/>
+    <path id="interface_user_usability_agent_call_communication_phone" data-name="interface, user, usability, agent, call, communication, phone" d="M14.581,12.769l-.327-.327a1.138,1.138,0,0,0-1.611,0h0a.392.392,0,0,0-.113.274h0a.386.386,0,0,1-.33.386,2.153,2.153,0,0,1-2.4-2.4.386.386,0,0,1,.386-.33h0a.392.392,0,0,0,.274-.113h0a1.138,1.138,0,0,0,0-1.611l-.327-.327a1.044,1.044,0,0,0-1.606.144,3.127,3.127,0,0,0-.514,1.931,4.849,4.849,0,0,0,4.5,4.5,3.127,3.127,0,0,0,1.935-.514,1.044,1.044,0,0,0,.139-1.614Z" transform="translate(12.733 8.408)" fill="#7e9abf"/>
+  </g>
+</svg>

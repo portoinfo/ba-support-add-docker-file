@@ -1,0 +1,33 @@
+{
+  "name": "buiderall.css",
+  "version": "1.5.7", 
+  "license": "MIT",
+  "main": "dist/index.css",
+  "description": "Builderall CSS framework",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "@parcel/transformer-vue": "^2.8.3",
+    "gh-pages": "^5.0.0",
+    "parcel": "^2.8.3"
+  },
+  "scripts": {
+    "build": "parcel build scss/index.scss --no-source-maps --dist-dir css --no-cache",
+    "start": "parcel serve docs/index.html --open --no-cache",
+    "predeploy": "parcel build docs/index.html --public-url ./ --no-cache && cp dist/index.html dist/404.html",
+    "deploy": "gh-pages -d dist"
+  },
+  "targets": {
+    "main": false
+  },
+  "files": [
+    "fonts",
+    "css",
+    "scss",
+    "README.md"
+  ],
+  "dependencies": {
+    "vue": "^3.2.47",
+    "vue-highlight-code": "^0.1.16",
+    "vue-router": "^4.1.6"
+  }
+}

@@ -1,0 +1,71 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: ba-support
+  namespace: helpdesk
+data:
+  forcehttps: "true"
+  APP_NAME: basupport
+  APP_ENV: sandbox
+  APP_KEY: base64:hAtSDOXxF+tdMSa9JufKRYDtKKSJH8cya6Pp0eTFrXk=
+  APP_DEBUG: "true"
+  APP_URL: https://ba-support.kub.app.builderall.io
+  APP_IS_HELPDESK: "false"
+  JWT_SECRET: J2kI6obwJjmkW4K7G49Xd3xXtVQySZsYiodvaGZOR83yAvwUXHCCElioloRUxqIz
+  HELP_DESK_KEY_RC4: ciERDskoe58we4f8awfZyzsrTo
+  LOG_CHANNEL: stack
+  LOGGER_KEY: support-system
+  BUILDERALL_USERS_SERVICE_SERVER_ADDR: "65.111.162.7:45746"
+  OFFICE_URL: https://office.builderall.io
+  DNS_MANAGER_URL: https://dns.builderall.io
+  APP_PYTHON_ROBOT: /usr/bin/python3.9
+
+  DB_CONNECTION: mysql
+  DB_HOST: "65.111.162.18"
+  DB_PORT: "3306"
+  DB_DATABASE: basupport
+  DB_USERNAME: basupport
+  DB_PASSWORD: ooj2waiv7shaechahw2D
+
+  BROADCAST_DRIVER: pusher
+  CACHE_DRIVER: file
+  QUEUE_CONNECTION: database
+  SESSION_DRIVER: file
+  SESSION_LIFETIME: "120"
+  # REDIS_HOST: 127.0.0.1
+  # REDIS_PASSWORD: null
+  # REDIS_PORT: "6379"
+  MAIL_MAILER: mailing_boss
+  MAIL_HOST: smtp.mailtrap.io
+  MAIL_PORT: "2525"
+  MAIL_USERNAME: null
+  MAIL_PASSWORD: null
+  MAIL_ENCRYPTION: null
+  MAIL_FROM_ADDRESS: null
+  MAIL_FROM_NAME: basupport
+  MAILING_PUBLIC_KEY: 5a15cee44005a93ea833cc32781c4415126adf3f
+  MAILING_PRIVATE_KEY: f3143959eef6c58df2709e1afb1ff8bbd48d68e0
+
+  AWS_ACCESS_KEY_ID:
+  AWS_SECRET_ACCESS_KEY:
+  AWS_DEFAULT_REGION: us-east-1
+  AWS_BUCKET:
+  PUSHER_APP_ID: eyJpdiI6IlZrSjBrTkYxYXZIMEwvcmp5MVdNZ2c9PSIsInZhbHVlIjoiZTAwd01rZGcwSytvc2srRVR1Ky92QT09IiwibWFjIjoiY2UxMmM2ZTgzNzk0N2NmNDhhOGYzZWMxMWIxN2UxYTdhODBhMTE2ZmNjN2IwZDIwYTFjNzU2ZjAxZTdhZGVkZiJ9
+  PUSHER_APP_KEY: eyJpdiI6InBpNWJsVUtNZ0kvMEJDUFFaeldCWXc9PSIsInZhbHVlIjoiVENRbU82WkU2RjlNWGFaNmw1MWIzQT09IiwibWFjIjoiNDc3MTNkZWQ2NDYzMjA3NTYwMDMwN2NlMzVjNDFlMWI2NmVkODcwYjdlN2M2ZTk4NDMwOTFmNjRhYTliNDdjOCJ9
+  PUSHER_APP_SECRET: eyJpdiI6Ink0K20yU0JFRWt6bVdVaVhLc2p0Tnc9PSIsInZhbHVlIjoid0VlSEtiU1ZzU0VWeFE2UjVsWWRUb09KZEt1eVBzMXNuanhtbjQxL1dHND0iLCJtYWMiOiJjYjVlY2Q2YmJiNTNkMDNkMDEzMjg4NGE5Y2VjYmJlZDExODNkMjZmYWFjYWZmZjUzYWJjZjQ5Y2JjNmRiYjg5In0=
+  PUSHER_APP_CLUSTER: mt1
+  PUSHER_APP_HOST: ba-support.kub.app.builderall.io
+  PUSHER_APP_PORT: "6002"
+  PUSHER_APP_CERTIFICATE: /etc/wildcard/builderall.io/fullchain.cer
+  PUSHER_APP_PRIVATE_KEY: /etc/wildcard/builderall.io/builderall.io.key
+  PUSHER_APP_SCHEME: https
+  KEY_GOOGLE_TRANSLATOR: AIzaSyCpRdD80Bcu9zATlbUZ98-VdcVtEXthxA0
+  MIX_BROADCAST_DRIVER: pusher
+  MIX_PUSHER_APP_HOST: ba-support.kub.app.builderall.io
+  MIX_PUSHER_APP_PORT: "6002"
+  MIX_APP_ENV: "6002"
+  MIX_APP_URL: https://ba-support.kub.app.builderall.io
+  MIX_INTEGRATION_SCRIPT_URL: "https://ba-support.kub.app.builderall.io/js/api/app.js"
+  TELEGRAM_BOT_API: 2024508259:AAGw0W_MiLSjYmBZZA26VBQD09HsRr91TrY
+  MIX_KEY_GOOGLE_TRANSLATOR: AIzaSyCpRdD80Bcu9zATlbUZ98-VdcVtEXthxA0
+

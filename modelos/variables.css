@@ -1,0 +1,21 @@
+html {
+    --schedule-null: #EBEBEB;
+    --schedule-pending: #FFB244;
+    --schedule-canceled: #ff4872;
+    --schedule-scheduled: #6563ff;
+    --schedule-rescheduled: #6563ff;
+    --schedule-completed: #00c38e;
+
+    --semibold: 600;
+    --bold: 700;
+    --extrabold: 800;
+    --black: 900;
+
+    --event-past: #666666;
+    --event-past-light:  #F1F0F7;
+    --event-unavailable: #FF7C93;
+    --event-unavailable-light: #FFF2F4;
+    --event-success: #5ECF19;
+	--event-success-light: #F7FCF5;
+	--event-primary-light: #C6E3FF;
+}

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70" height="47" viewBox="0 0 70 47">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Rounded_Rectangle_7_copy" data-name="Rounded Rectangle 7 copy" d="M16.364,295H73.636A6.387,6.387,0,0,1,80,301.409v34.182A6.386,6.386,0,0,1,73.636,342H16.364A6.386,6.386,0,0,1,10,335.591V301.409A6.387,6.387,0,0,1,16.364,295Z" fill="#f5f7fa"/>
+    </clipPath>
+  </defs>
+  <g id="Argentina" transform="translate(-10 -295)">
+    <g id="Rounded_Rectangle_7_copy-2" data-name="Rounded Rectangle 7 copy">
+      <path id="Rounded_Rectangle_7_copy-3" data-name="Rounded Rectangle 7 copy" d="M16.364,295H73.636A6.387,6.387,0,0,1,80,301.409v34.182A6.386,6.386,0,0,1,73.636,342H16.364A6.386,6.386,0,0,1,10,335.591V301.409A6.387,6.387,0,0,1,16.364,295Z" fill="#f5f7fa"/>
+      <g id="Clip" clip-path="url(#clip-path)">
+        <rect id="Rectangle_1_copy" data-name="Rectangle 1 copy" width="70" height="13" transform="translate(10 295)" fill="#8cbae2"/>
+        <rect id="Rectangle_1_copy_24" data-name="Rectangle 1 copy 24" width="70" height="13" transform="translate(10 329)" fill="#8cbae2"/>
+        <path id="Shape_1" data-name="Shape 1" d="M51.258,320.5a2.084,2.084,0,0,1,.236-.887l.408-.706a.913.913,0,0,0,0-.823l-.421-.729a2.123,2.123,0,0,1-.24-.887l0-.841a.913.913,0,0,0-.414-.711l-.708-.4a2.084,2.084,0,0,1-.65-.647l-.408-.706a.913.913,0,0,0-.713-.412H47.5a2.119,2.119,0,0,1-.888-.236l-.73-.418a.913.913,0,0,0-.823,0l-.7.411a2.083,2.083,0,0,1-.886.239h-.816a.913.913,0,0,0-.713.412l-.421.729a2.122,2.122,0,0,1-.648.651l-.727.424a.913.913,0,0,0-.409.715l0,.816a2.084,2.084,0,0,1-.236.887l-.408.706a.913.913,0,0,0,0,.823l.421.729a2.12,2.12,0,0,1,.24.887l0,.841a.913.913,0,0,0,.415.711l.708.4a2.083,2.083,0,0,1,.65.647l.408.707a.913.913,0,0,0,.713.411H43.5a2.122,2.122,0,0,1,.888.236l.73.418a.913.913,0,0,0,.823,0l.7-.411a2.083,2.083,0,0,1,.886-.239h.816a.913.913,0,0,0,.713-.411l.421-.729a2.119,2.119,0,0,1,.648-.651l.727-.424a.913.913,0,0,0,.409-.715Z" fill="#f6bb42"/>
+      </g>
+    </g>
+  </g>
+</svg>

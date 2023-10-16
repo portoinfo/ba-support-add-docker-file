@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70" height="47" viewBox="0 0 70 47">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Rounded_Rectangle_7_copy" data-name="Rounded Rectangle 7 copy" d="M896.364,67h57.273A6.387,6.387,0,0,1,960,73.409v34.182A6.387,6.387,0,0,1,953.636,114H896.364A6.386,6.386,0,0,1,890,107.591V73.409A6.387,6.387,0,0,1,896.364,67Z" fill="#f5f7fa"/>
+    </clipPath>
+  </defs>
+  <g id="Panama" transform="translate(-890 -67)">
+    <g id="Rounded_Rectangle_7_copy-2" data-name="Rounded Rectangle 7 copy">
+      <path id="Rounded_Rectangle_7_copy-3" data-name="Rounded Rectangle 7 copy" d="M896.364,67h57.273A6.387,6.387,0,0,1,960,73.409v34.182A6.387,6.387,0,0,1,953.636,114H896.364A6.386,6.386,0,0,1,890,107.591V73.409A6.387,6.387,0,0,1,896.364,67Z" fill="#f5f7fa"/>
+      <g id="Clip" clip-path="url(#clip-path)">
+        <rect id="Rectangle_1" data-name="Rectangle 1" width="35" height="24" transform="translate(925 67)" fill="#ed5565"/>
+        <rect id="Rectangle_1_copy_23" data-name="Rectangle 1 copy 23" width="35" height="24" transform="translate(890 91)" fill="#4758a9"/>
+      </g>
+    </g>
+    <path id="Shape_2_copy_22" data-name="Shape 2 copy 22" d="M904.391,83.838c-.46.326-.728.142-.594-.407l.5-2.046a1.849,1.849,0,0,0-.534-1.669l-1.5-1.295c-.427-.368-.316-.683.246-.7l2.1-.059a1.509,1.509,0,0,0,1.313-1.015l.658-2.235c.16-.542.447-.551.638-.019l.792,2.2a1.586,1.586,0,0,0,1.37.978l2.143.022c.563.006.675.314.251.685l-1.631,1.424a1.761,1.761,0,0,0-.487,1.662l.521,1.8c.157.543-.107.746-.586.45l-1.741-1.072a1.684,1.684,0,0,0-1.709.055Z" fill="#4758a9"/>
+    <path id="Shape_2_copy_23" data-name="Shape 2 copy 23" d="M939.391,106.838c-.46.326-.727.142-.594-.407l.5-2.046a1.848,1.848,0,0,0-.534-1.669l-1.5-1.295c-.427-.368-.316-.683.246-.7l2.1-.059a1.509,1.509,0,0,0,1.313-1.015l.658-2.235c.16-.542.447-.551.638-.019l.792,2.2a1.586,1.586,0,0,0,1.37.978l2.143.022c.563.006.675.314.251.685l-1.631,1.425a1.761,1.761,0,0,0-.487,1.662l.521,1.8c.157.543-.107.746-.587.45l-1.741-1.072a1.685,1.685,0,0,0-1.709.055Z" fill="#ed5565"/>
+  </g>
+</svg>

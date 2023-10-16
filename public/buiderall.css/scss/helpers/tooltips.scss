@@ -1,0 +1,40 @@
+/* Tooltips */
+
+[ba-tooltip-title]{
+    position: relative;
+    cursor: pointer;
+}
+  
+[ba-tooltip-title]:hover::after{
+    content: attr(ba-tooltip-title);
+    position: absolute;
+    background-color: $white1;
+    border-radius: 12px;
+    padding: .6rem;
+    width: max-content;
+    color: $dark5;
+    white-space: nowrap;
+    font-size: .6rem;
+    z-index: 1;
+}
+
+[ba-tooltip-position="top"]::after{
+    bottom: calc(100% + 5px);
+}
+
+[ba-tooltip-position="bottom"]::after{
+    top: calc(100% + 5px);
+}
+
+[ba-tooltip-position="right"]::after{
+    right: calc(100% + 5px);
+}
+
+[ba-tooltip-position="left"]::after{
+    left: calc(100% + 5px);
+}
+
+[ba-tooltip-color="dark"]::after{
+    background-color: $black11 !important;
+    color: $white1 !important;
+}

@@ -1,0 +1,23 @@
+/* Footer */
+
+.ba-footer{
+    .ba-nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        .ba-link{
+            color: $dark5;
+            font-size: .9rem;
+            cursor: pointer;
+        }
+        .ba-blue{
+            color: $blue1;
+        }
+        hr{
+            height: 14px;
+            border-radius: 10px;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ba-support-websockets
+  namespace: helpdesk
+  annotations:
+     keel.sh/policy: force
+  labels:
+    app: ba-support-websockets
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ba-support-websockets
+  template:
+    metadata:
+      labels:
+        app: ba-support-websockets
+    spec:
+      containers:
+      - name:  websockets
+        image: docker.io/baimages/helpdesk:unstable
+        command: ["php", "artisan", "websockets:serve", "--port", "6002"]
+        imagePullPolicy: Always
+        envFrom:
+          - configMapRef:
+              name: ba-support
+        resources:
+          limits:
+            cpu: "2"
+            memory: 2Gi
+          requests:
+            cpu: 500m
+            memory: 200Mi

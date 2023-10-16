@@ -1,0 +1,28 @@
+/* Selects */
+
+.ba-select{
+    background-color: $light22;
+    padding: .4rem .8rem;
+    font-size: .8rem;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    color: $dark6;
+    font-weight: 600;
+
+    // Sizes
+    &.ba-sm{
+        padding: .2rem .6rem;
+        font-size: .6rem;
+    }
+
+    &.ba-md{
+        padding: .4rem .8rem;
+        font-size: .8rem;
+    }
+
+    &.ba-lg{
+        padding: .8rem 1rem;
+        font-size: 1rem;
+    }
+}

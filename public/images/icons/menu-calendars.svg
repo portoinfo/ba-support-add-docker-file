@@ -1,0 +1,13 @@
+<svg id="calendar" xmlns="http://www.w3.org/2000/svg" width="23.32" height="24.219" viewBox="0 0 23.32 24.219">
+  <path id="Path" d="M58.4,344a.833.833,0,0,0-.833.833V347.4h1.666v-2.563A.833.833,0,0,0,58.4,344Z" transform="translate(-52.573 -344)" fill="#6fb0ff"/>
+  <path id="Path-2" data-name="Path" d="M71.4,344a.833.833,0,0,0-.833.833V347.4h1.666v-2.563A.833.833,0,0,0,71.4,344Z" transform="translate(-53.91 -344)" fill="#6fb0ff"/>
+  <path id="Exclusão_1" data-name="Exclusão 1" d="M20.818,20.822H2.5a2.5,2.5,0,0,1-2.5-2.5V2.5A2.5,2.5,0,0,1,2.5,0H5V3.33a.831.831,0,1,0,1.662,0V0h10V3.33a.831.831,0,1,0,1.662,0V0h2.5a2.505,2.505,0,0,1,2.5,2.5V18.322A2.505,2.505,0,0,1,20.818,20.822ZM1.668,7.5V18.322a.821.821,0,0,0,.83.832h18.32a.831.831,0,0,0,.832-.832V7.5H1.668Z" transform="translate(0 3.396)" fill="#0f7bff"/>
+  <g id="Grupo_3331" data-name="Grupo 3331" transform="translate(4 13)">
+    <rect id="Retângulo_401" data-name="Retângulo 401" width="3" height="3" rx="1" transform="translate(6)" fill="#6fb0ff"/>
+    <rect id="Retângulo_405" data-name="Retângulo 405" width="3" height="3" rx="1" fill="#6fb0ff"/>
+    <rect id="Retângulo_406" data-name="Retângulo 406" width="3" height="3" rx="1" transform="translate(0 5)" fill="#6fb0ff"/>
+    <rect id="Retângulo_402" data-name="Retângulo 402" width="3" height="3" rx="1" transform="translate(6 5)" fill="#6fb0ff"/>
+    <rect id="Retângulo_403" data-name="Retângulo 403" width="3" height="3" rx="1" transform="translate(12)" fill="#6fb0ff"/>
+    <rect id="Retângulo_404" data-name="Retângulo 404" width="3" height="3" rx="1" transform="translate(12 5)" fill="#6fb0ff"/>
+  </g>
+</svg>

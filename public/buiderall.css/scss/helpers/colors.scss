@@ -1,0 +1,383 @@
+/* COLORS */
+
+$prefixColor: 'color';
+$prefixBackgroundColor: 'bg';
+
+/* MIXINS */
+
+@mixin setVariableClass($variable,$color){
+    .ba-color-#{$variable}{
+        color: $color;
+    }
+    .ba-bg-#{$variable}{
+        background-color: $color;
+    }
+}
+
+/* VARIABLES */
+
+/* PRIMARY */
+
+// White
+$white1: #fff;
+@include setVariableClass('white1',$white1);
+$white2: #FCFEFF;
+@include setVariableClass('white2',$white2);
+
+// Blue
+$blue1: #0080FC;
+@include setVariableClass('blue1',$blue1);
+$blue2: #0E88FF;
+@include setVariableClass('blue2',$blue2);
+$blue3: #1F91FF;
+@include setVariableClass('blue3',$blue3);
+$blue4: #3099FF;
+@include setVariableClass('blue4',$blue4);
+$blue5: #41A2FF;
+@include setVariableClass('blue5',$blue5);
+$blue6: #52AAFF;
+@include setVariableClass('blue6',$blue6);
+$blue7: #63B2FF;
+@include setVariableClass('blue7',$blue7);
+$blue8: #85C3FF;
+@include setVariableClass('blue8',$blue8);
+$blue9: #96CBFF;
+@include setVariableClass('blue9',$blue9);
+$blue10: #A7D4FF;
+@include setVariableClass('blue10',$blue10);
+$blue11: #B8DCFF;
+@include setVariableClass('blue11',$blue11);
+$blue12: #C9E4FF;
+@include setVariableClass('blue12',$blue12);
+$blue13: #DAEDFF;
+@include setVariableClass('blue13',$blue13);
+$blue14: #EBF5FF;
+@include setVariableClass('blue14',$blue14);
+$blue15: #5E81F4;
+@include setVariableClass('blue15',$blue15);
+$blue16: #1665D8;
+@include setVariableClass('blue16',$blue16);
+$blue17: #FCFEFF;
+@include setVariableClass('blue17',$blue17);
+$blue18: #E4EAF6;
+@include setVariableClass('blue18',$blue18);
+$blue19: #0072E1;
+@include setVariableClass('blue19',$blue19);
+$blue20: #E5F1FC;
+@include setVariableClass('blue20',$blue20);
+$blue21: #E6EFFA;
+@include setVariableClass('blue21',$blue21);
+$blue22: #F8FAFD;
+@include setVariableClass('blue22',$blue22);
+
+
+// Purple
+$purple1: #7E1AFD;
+@include setVariableClass('purple1',$purple1);
+$purple2: #872BFD;
+@include setVariableClass('purple2',$purple2);
+$purple3: #913CFD;
+@include setVariableClass('purple3',$purple3);
+$purple4: #9A4DFD;
+@include setVariableClass('purple4',$purple4);
+$purple5: #A45DFE;
+@include setVariableClass('purple5',$purple5);
+$purple6: #AD6EFE;
+@include setVariableClass('purple6',$purple6);
+$purple7: #B77FFE;
+@include setVariableClass('purple7',$purple7);
+$purple8: #C090FE;
+@include setVariableClass('purple8',$purple8);
+$purple9: #CAA1FE;
+@include setVariableClass('purple9',$purple9);
+$purple10: #D3B2FE;
+@include setVariableClass('purple1',$purple1);
+$purple11: #DDC3FE;
+@include setVariableClass('purple11',$purple11);
+$purple12: #E6D3FF;
+@include setVariableClass('purple12',$purple12);
+$purple13: #F0E4FF;
+@include setVariableClass('purple13',$purple13);
+$purple14: #F9F5FF;
+@include setVariableClass('purple14',$purple14);
+
+// Cyan
+$cyan1: #00F8F0;
+@include setVariableClass('cyan1',$cyan1);
+$cyan2: #1BFFF8;
+@include setVariableClass('cyan2',$cyan2);
+$cyan3: #4EFFF9;
+@include setVariableClass('cyan3',$cyan3);
+$cyan4: #70FFFA;
+@include setVariableClass('cyan4',$cyan4);
+$cyan5: #81FFFB;
+@include setVariableClass('cyan5',$cyan5);
+$cyan6: #92FFFB;
+@include setVariableClass('cyan6',$cyan6);
+$cyan7: #B4FFFD;
+@include setVariableClass('cyan7',$cyan7);
+$cyan8: #C5FFFD;
+@include setVariableClass('cyan8',$cyan8);
+$cyan9: #D6FFFE;
+@include setVariableClass('cyan9',$cyan9);
+$cyan10: #D6FFFE;
+@include setVariableClass('cyan10',$cyan10);
+$cyan11: #F8FFFF;
+@include setVariableClass('cyan11',$cyan11);
+
+/* NAVY */
+
+// Black
+$black1: #000;
+@include setVariableClass('black1',$black1);
+$black2: #131B24;
+@include setVariableClass('black2',$black2);
+$black3: #19232F;
+@include setVariableClass('black3',$black3);
+$black4: #1F2C3A;
+@include setVariableClass('black4',$black4);
+$black5: #253445;
+@include setVariableClass('black5',$black5);
+$black6: #2A3C51;
+@include setVariableClass('black6',$black6);
+$black7: #30455C;
+@include setVariableClass('black7',$black7);
+$black8: #364D67;
+@include setVariableClass('black8',$black8);
+$black9: #3C5572;
+@include setVariableClass('black9',$black9);
+$black10: #425E7D;
+@include setVariableClass('black10',$black10);
+$black11: #486688;
+@include setVariableClass('black11',$black11);
+$black12: #4E6E93;
+@include setVariableClass('black12',$black12);
+$black13: #54779E;
+@include setVariableClass('black13',$black13);
+$black14: #6688AE;
+@include setVariableClass('black14',$black14);
+$black15: #7191B4;
+@include setVariableClass('black15',$black15);
+$black16: #7C99BA;
+@include setVariableClass('black16',$black16);
+$black17: #87A2C0;
+@include setVariableClass('black17',$black17);
+$black18: #92AAC6;
+@include setVariableClass('black18',$black18);
+$black19: #9DB3CC;
+@include setVariableClass('black19',$black19);
+$black20: #A9BCD1;
+@include setVariableClass('black20',$black20);
+$black21: #111827;
+@include setVariableClass('black21',$black21);
+$black22: #333333;
+@include setVariableClass('black22',$black22);
+$black23: #1E1E2D;
+@include setVariableClass('black23',$black23);
+
+// Dark
+$dark1: #646566;
+@include setVariableClass('dark1',$dark1);
+$dark2: #97989A;
+@include setVariableClass('dark2',$dark2);
+$dark3: #6E6E6E;
+@include setVariableClass('dark3',$dark3);
+$dark4: #90979F;
+@include setVariableClass('dark4',$dark4);
+$dark5: #4D5D71;
+@include setVariableClass('dark5',$dark5);
+$dark6: #8D9EB5;
+@include setVariableClass('dark6',$dark6);
+
+// rgba
+$rgba1: rgba(0, 0, 0, 0.08);
+@include setVariableClass('rgba1',$rgba1);
+$rgba2: rgba(0, 128, 252, 0.35);
+@include setVariableClass('rgba2',$rgba2);
+$rgba3: rgba(236, 49, 62, 0.35);
+@include setVariableClass('rgba3',$rgba3);
+$rgba4: rgba(0, 199, 174, 0.35);
+@include setVariableClass('rgba4',$rgba4);
+$rgba5: rgba(191, 205, 221, 0.35);
+@include setVariableClass('rgba5',$rgba5);
+$rgba6: rgba(72, 102, 136, 0.35);
+@include setVariableClass('rgba6',$rgba6);
+$rgba7: rgba(24, 39, 75, 0.12);
+@include setVariableClass('rgba7',$rgba7);
+$rgba8: rgba(24, 39, 75, 0.08);
+@include setVariableClass('rgba8',$rgba8);
+$rgba9: rgba(24, 39, 75, 0.1);
+@include setVariableClass('rgba9',$rgba9);
+$rgba10: rgba(24, 39, 75, 0.14);
+@include setVariableClass('rgba10',$rgba10);
+$rgba11: rgba(22, 34, 51, 0.12);
+@include setVariableClass('rgba11',$rgba11);
+$rgba12: rgba(22, 34, 51, 0.16);
+@include setVariableClass('rgba12',$rgba12);
+$rgba13: rgba(22, 34, 51, 0.08);
+@include setVariableClass('rgba13',$rgba13);
+$rgba14: rgba(0, 0, 0, 0.11);
+@include setVariableClass('rgba14',$rgba14);
+$rgba15: rgba(37, 52, 69, 0);
+@include setVariableClass('rgba15',$rgba15);
+$rgba16: rgba(0, 114, 225, 0.77);
+@include setVariableClass('rgba16',$rgba16);
+$rgba17: rgba(0, 0, 0, 0.16);
+@include setVariableClass('rgba17',$rgba17);
+
+// Light
+$light1: #B4C4D7;
+@include setVariableClass('light1',$light1);
+$light2: #BFCDDD;
+@include setVariableClass('light2',$light2);
+$light3: #CAD6E3;
+@include setVariableClass('light3',$light3);
+$light4: #D5DEE9;
+@include setVariableClass('light4',$light4);
+$light5: #E0E7EF;
+@include setVariableClass('light5',$light5);
+$light6: #EBF0F5;
+@include setVariableClass('light6',$light6);
+$light7: #F6F8FB;
+@include setVariableClass('light7',$light7);
+$light8: #FAFBFC;
+@include setVariableClass('light8',$light8);
+$light9: #F7F8FC;
+@include setVariableClass('light9',$light9);
+$light10: #D7DEE6;
+@include setVariableClass('light10',$light10);
+$light11: #DEE3EA;
+@include setVariableClass('light11',$light11);
+$light12: #E9EDF2;
+@include setVariableClass('light12',$light12);
+$light13: #D9D9D9;
+@include setVariableClass('light13',$light13);
+$light14: #EFF2F8;
+@include setVariableClass('light14',$light14);
+$light15: #94A4BA;
+@include setVariableClass('light15',$light15);
+$light16: #95ACCC;
+@include setVariableClass('light16',$light16);
+$light17: #dce4ee;
+@include setVariableClass('light17',$light17);
+$light18: #E0F0FF;
+@include setVariableClass('light18',$light18);
+$light19: #F3F6F9;
+@include setVariableClass('light19',$light19);
+$light20: #D4DFF5;
+@include setVariableClass('light20',$light20);
+$light21: #E1EAF6;
+@include setVariableClass('light21',$light21);
+$light22: #F4F6FB;
+@include setVariableClass('light22',$light22);
+$light23: #66708580;
+@include setVariableClass('light23',$light23);
+
+
+/* SUCCESS */
+
+// Green
+$green1: #20E4B3;
+@include setVariableClass('green1',$green1);
+$green2: #2FE6B8;
+@include setVariableClass('green2',$green2);
+$green3: #3EE8BD;
+@include setVariableClass('green3',$green3);
+$green4: #4DEAC3;
+@include setVariableClass('green4',$green4);
+$green5: #5DEBC8;
+@include setVariableClass('green5',$green5);
+$green6: #6CEDCD;
+@include setVariableClass('green6',$green6);
+$green7: #7BEFD2;
+@include setVariableClass('green7',$green7);
+$green8: #8AF1D7;
+@include setVariableClass('green8',$green8);
+$green9: #99F3DC;
+@include setVariableClass('green9',$green9);
+$green10: #A8F5E2;
+@include setVariableClass('green10',$green10);
+$green11: #B8F6E7;
+@include setVariableClass('green11',$green11);
+$green12: #C7F8EC;
+@include setVariableClass('green12',$green12);
+$green13: #D6FAF1;
+@include setVariableClass('green13',$green13);
+$green14: #E5FCF6;
+@include setVariableClass('green14',$green14);
+$green15: #F4FEFB;
+@include setVariableClass('green15',$green15);
+$green16: #1AD9A9;
+@include setVariableClass('green16',$green16);
+$green17: #a1c3a5;
+@include setVariableClass('green17',$green17);
+$green18: #EAF7EE;
+@include setVariableClass('green18',$green18);
+$green19: #01D4B9;
+@include setVariableClass('green19',$green19);
+
+/* ERROR */
+
+// Red
+$red1: #FA4B57;
+@include setVariableClass('red1',$red1);
+$red2: #FA5C66;
+@include setVariableClass('red2',$red2);
+$red3: #FB6C76;
+@include setVariableClass('red3',$red3);
+$red4: #FB7D85;
+@include setVariableClass('red4',$red4);
+$red5: #FC8D95;
+@include setVariableClass('red5',$red5);
+$red6: #FC9EA4;
+@include setVariableClass('red6',$red6);
+$red7: #FDAEB4;
+@include setVariableClass('red7',$red7);
+$red8: #FDBFC3;
+@include setVariableClass('red8',$red8);
+$red9: #FECFD3;
+@include setVariableClass('red9',$red9);
+$red10: #FEE0E2;
+@include setVariableClass('red10',$red10);
+$red11: #FFF0F1;
+@include setVariableClass('red11',$red11);
+$red12: #EC313E;
+@include setVariableClass('red12',$red12);
+$red13: #FCEDE9;
+@include setVariableClass('red13',$red13);
+$red14: #FEE4E7;
+@include setVariableClass('red14',$red14);
+
+/* WARNING */
+
+// Yellow
+$yellow1: #FFCC3F;
+@include setVariableClass('yellow1',$yellow1);
+$yellow2: #FFD150;
+@include setVariableClass('yellow2',$yellow2);
+$yellow3: #FFD561;
+@include setVariableClass('yellow3',$yellow3);
+$yellow4: #FFDA72;
+@include setVariableClass('yellow4',$yellow4);
+$yellow5: #FFDE83;
+@include setVariableClass('yellow5',$yellow5);
+$yellow6: #FFE394;
+@include setVariableClass('yellow6',$yellow6);
+$yellow7: #FFE7A5;
+@include setVariableClass('yellow7',$yellow7);
+$yellow8: #FFECB6;
+@include setVariableClass('yellow8',$yellow8);
+$yellow9: #FFF0C7;
+@include setVariableClass('yellow9',$yellow9);
+$yellow10: #FFF5D8;
+@include setVariableClass('yellow10',$yellow10);
+$yellow11: #FFF9E9;
+@include setVariableClass('yellow11',$yellow11);
+$yellow12: #FFFEFA;
+@include setVariableClass('yellow12',$yellow12);
+$yellow13: #FDF6E9;
+@include setVariableClass('yellow13',$yellow13);
+
+// Skin
+$skin1: #f7cb9c;
+@include setVariableClass('skin1',$skin1);

@@ -1,0 +1,24 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ba-support
+  namespace: helpdesk
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    cert-manager.io/cluster-issuer: "letsencrypt"
+spec:
+  rules:
+    - host: ba-support.kub.app.builderall.io
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: ba-support
+                port:
+                  number: 80
+  tls:
+    - hosts:
+      - ba-support.kub.app.builderall.io
+      secretName: helpdesk-tls 

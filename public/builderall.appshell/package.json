@@ -1,0 +1,40 @@
+{
+  "name": "builderall.appshell",
+  "homepage": "https://ebusiness4us.github.io/builderall.appshell/",
+  "version": "1.1.6",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "parcel build src/scripts/index.ts --no-cache",
+    "start": "parcel serve src/index.html",
+    "predeploy": "parcel build src/index.html --public-url ./ --no-cache",
+    "deploy": "gh-pages -d dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ebusiness4us/builderall.appshell.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ebusiness4us/builderall.appshell/issues"
+  },
+  "devDependencies": {
+    "@parcel/transformer-inline-string": "^2.8.3",
+    "@parcel/transformer-sass": "^2.8.3",
+    "@types/node": "^18.16.3",
+    "gh-pages": "^5.0.0",
+    "parcel": "^2.8.3"
+  },
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "files": [
+    "dist",
+    "README.md"
+  ]
+}

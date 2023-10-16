@@ -1,0 +1,80 @@
+# Stage 1: PHP
+FROM php:7.4-cli-alpine as php
+
+# Install necessary PHP extensions and dependencies
+RUN apk add --update --no-cache shadow \
+    libpng-dev \
+    libzip-dev \
+    zip \
+    unzip \
+    icu-dev \
+    && docker-php-ext-install zip gd pcntl intl
+
+# Install Composer
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+
+# Set the working directory for this stage
+WORKDIR /var/www
+
+# Copy Laravel project files to the PHP stage
+COPY . /var/www
+
+# Create user  www-data
+RUN useradd -G www-data,root -u 1000 -d /home/dev dev
+RUN mkdir -p /home/dev/.composer && \
+    chown -R dev:dev /home/dev
+
+### Fix issue of missing php7.4 creating a syslink 
+RUN ln -s /usr/local/bin/php /usr/local/bin/php7.4
+
+# Install project dependencies
+RUN composer config --global --auth http-basic.builderall.repo.repman.io token b8b9f8a8a330a945f64576b53dc9b3884e005069f71175443950304691d0e4f0
+
+# Install Composer dependencies and optimize autoloader
+RUN composer install --no-dev --no-interaction --optimize-autoloader \
+    && composer dump-autoload
+
+# Stage 2: Node.js
+FROM node:14-alpine as node
+
+# Set the working directory for this stage
+WORKDIR /var/www
+
+# Copy Laravel project files from the PHP stage to the Node.js stage
+COPY --from=php /var/www .
+
+# Install Node.js dependencies and compile JavaScript assets
+RUN npm ci && npm run prod
+
+# Clean up unnecessary files
+RUN rm -rf /var/www/node_modules/
+
+# Stage 3: Final App
+FROM baimages/php-nginx:7.4-alpine as app
+
+# Set the NGINX root directory environment variable
+ENV NGINX_ROOT=/var/www/public
+
+# Set the working directory for this stage
+WORKDIR /var/www
+
+# Copy Laravel project files
+COPY --chown=www-data:www-data  --from=node  /var/www   /var/www
+
+# Install PHP extension pcntl
+RUN docker-php-ext-install pcntl
+
+RUN php artisan cache:clear &&\
+php artisan config:clear &&\
+php artisan route:clear &&\
+php artisan view:clear &&\
+php artisan config:cache &&\
+php artisan clear-compiled
+
+# Copy additional configuration files if needed
+RUN mkdir -p /etc/wildcard/builderall.io/
+COPY ./kubernetes/deploy.sh /usr/local/bin/deploy.sh
+COPY ./kubernetes/nginx.conf /etc/nginx/nginx.conf
+
+EXPOSE 80
+CMD ["sh", "/usr/local/bin/deploy.sh"]

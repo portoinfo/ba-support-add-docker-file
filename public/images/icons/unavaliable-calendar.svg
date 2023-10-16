@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="118.482" height="116.741" viewBox="0 0 118.482 116.741">
+  <g id="schedule" transform="translate(12.741 -2)" opacity="0.725" style="mix-blend-mode: luminosity;isolation: isolate">
+    <g id="Grupo_3125" data-name="Grupo 3125" opacity="0.675">
+      <path id="Caminho_399" data-name="Caminho 399" d="M11.152,22.608A5.149,5.149,0,0,1,6,17.456V7.152a5.152,5.152,0,1,1,10.3,0v10.3a5.149,5.149,0,0,1-5.152,5.152Zm51.521,0a5.149,5.149,0,0,1-5.152-5.152V7.152a5.152,5.152,0,1,1,10.3,0v10.3a5.149,5.149,0,0,1-5.152,5.152Z" transform="translate(8.525)" fill="#a2a1ff"/>
+      <path id="Caminho_400" data-name="Caminho 400" d="M89.586,4H84.434V9.15a5.152,5.152,0,1,1-10.3,0V4H32.913V9.15a5.152,5.152,0,1,1-10.3,0V4H17.456A15.456,15.456,0,0,0,2,19.457v10.3H105.043v-10.3A15.456,15.456,0,0,0,89.586,4Z" transform="translate(-8.084 8.307)" fill="#6563ff"/>
+      <path id="Caminho_401" data-name="Caminho 401" d="M2,9V60.522A15.456,15.456,0,0,0,17.456,75.978h72.13a15.456,15.456,0,0,0,15.456-15.456V9Z" transform="translate(-8.084 29.066)" fill="#a2a1ff"/>
+      <line id="Linha_8" data-name="Linha 8" x1="109" y2="103" transform="translate(-7.5 11.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="6"/>
+      <line id="Linha_7" data-name="Linha 7" x1="109" y2="103" transform="translate(-8.5 6.5)" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="6"/>
+    </g>
+  </g>
+</svg>

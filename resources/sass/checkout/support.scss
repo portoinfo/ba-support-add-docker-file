@@ -1,0 +1,36 @@
+.ba-icon-container{
+    display: block; 
+    position: fixed; 
+    margin: 0px 30px 25px 0px; 
+    inset: auto 0px 0px auto; 
+    z-index: 20000000;
+    img{
+        height: 70px;
+        width: 70px;
+        border-radius: 75%;
+        border: #fff solid 2px;
+    }
+    .ba-attendant{
+        &:hover{
+            border-color: rgb(48, 145, 242);
+            border-width: 3px;
+            cursor: pointer;
+        }
+    }
+    
+    .ba-online-icon{
+        position: absolute;
+        right: 0;
+        bottom: 5px;
+        padding: 7px;
+        background-color: #31A24C;
+        border-radius: 50%;
+        border: #fff solid 2px;
+    }
+    
+    .ba-loader{
+        border-color: rgb(48, 145, 242);
+        background: #e8f1fc;
+        border-width: 3px;
+    }
+}

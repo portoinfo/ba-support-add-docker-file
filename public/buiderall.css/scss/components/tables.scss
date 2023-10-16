@@ -1,0 +1,134 @@
+/* Tables */
+
+.ba-table{
+    border-collapse: separate;
+    border-spacing: 0 .6rem;
+    thead{
+        tr{
+            background-color: $light14;
+            border-radius: 6px;
+            th{
+                padding: .6rem 1rem;
+                color: $dark5;;
+                font-weight: 600;
+                &:first-child{
+                    border-radius: 6px 0 0 6px;
+                }
+                &:last-child{
+                    border-radius: 0 6px 6px 0;
+                }
+            }
+        }
+    }
+    tbody{
+        tr{
+            border-radius: 6px;
+            position: relative;
+            td{
+                padding: .6rem 1rem;
+                border-top: 1px solid $light19;
+                border-bottom: 1px solid $light19;
+                color: $dark5;
+                position: relative;
+                &:first-child{
+                    border-left: 1px solid $light19;
+                    border-radius: 6px 0 0 6px;
+                }
+                &:last-child{
+                    border-right: 1px solid $light19;
+                    border-radius: 0 6px 6px 0;
+                }
+                &.ba-double{
+                    :is(.ba-title,.ba-subtitle){
+                        color: $dark5;
+                        font-size: inherit;
+                    }
+                    .ba-title{
+                        font-weight: 700;
+                    }
+                }
+            }
+            &:hover{
+                box-shadow: 1px 1px 4px $rgba17;
+                transition: box-shadow .6s ease;
+            }
+        }
+    }
+
+    // Sizes
+    &.ba-sm{
+        thead{
+            tr{
+                th{
+                    font-size: .7rem;
+                }
+            }
+        }
+        tbody{
+            tr{
+                td{
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
+
+    &.ba-md{
+        thead{
+            tr{
+                th{
+                    font-size: .9rem;
+                }
+            }
+        }
+        tbody{
+            tr{
+                td{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    &.ba-lg{
+        thead{
+            tr{
+                th{
+                    font-size: 1.1rem;
+                }
+            }
+        }
+        tbody{
+            tr{
+                td{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+    // Lines
+    &.ba-lines{
+        tbody{
+            tr{
+                td:not(:nth-last-child(2),:last-child):after{
+                    content: "";
+                    position: absolute;
+                    top: 25%;
+                    right: 0;
+                    height: 50%;
+                    border-right: 1px solid $light1; 
+                }
+            }
+        }
+    }
+}
+
+.ba-border-table{
+    border-collapse: collapse;
+    width: 90%;
+    :is(th, td, tr):not(.ba-table tr, .ba-table td, .ba-table th){
+        border: 1px solid $black18;
+        padding: 1rem;
+    }
+}

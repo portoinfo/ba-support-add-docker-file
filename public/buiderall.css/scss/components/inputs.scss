@@ -1,0 +1,175 @@
+/* Inputs */
+
+// Search
+.ba-box-search-input{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: .1rem;
+    background-color: $light14;
+    border: 2px solid $light14;
+    outline: 2px solid $light14;
+    padding: .4rem .6rem;
+    border-radius: 6px;
+    &:focus-within{
+        transition: .2s;
+        border: 2px solid $blue4;
+        background-color: $light8;
+        outline: 2px solid $light18;
+    }
+    .ba-input[type="search"]{
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: $light15;
+        padding: 0;
+        border-radius: 0;
+        &::-webkit-search-decoration,
+        &::-webkit-search-cancel-button,
+        &::-webkit-search-results-button,
+        &::-webkit-search-results-decoration {
+            display: none;
+        }
+        &::placeholder{
+            color: $light15;
+        }
+    }
+    .ba-button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        svg{
+            fill: $light16;
+            width: 16px;
+            height: 16px;
+        }
+        &:hover{
+            svg{
+                transition: .4s;
+                fill: $blue1;
+            }
+        }
+    }
+    &.ba-error{
+        transition: .2s;
+        border: 2px solid $red1;
+        background-color: $light8;
+        outline: 2px solid $red14;
+        .ba-input[type="search"]{
+            color: $red1;
+            &::placeholder{
+                color: $red1;
+            }
+        }
+        .ba-button{
+            svg{
+                fill: $red1;
+            }
+        }
+    }
+    &.ba-disabled{
+        transition: .2s;
+        background-color: $light14;
+        border: 2px solid $light14;
+        outline: 1px solid $light17;
+        .ba-button{
+            &:disabled{
+                cursor: not-allowed;
+            }
+            svg{
+                fill: $light16;
+            }
+        }
+    }
+    &.ba-white{
+        background-color: $white1;
+        border: none;
+        outline: none;
+        padding: .6rem;
+    }
+}
+
+// Complete
+.ba-box-input{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    .ba-info{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .ba-info-left{
+            display: flex;
+            align-items: center;
+            gap: .2rem;
+            .ba-icon{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                svg{
+                    width: 11px;
+                    height: 11px;
+                    fill: $black19;
+                }
+            }
+            .ba-label{
+                font-size: .8rem;
+            }
+        }
+        .ba-optional{
+            float: right;
+            font-size: .6rem;
+            color: $black18;
+        }
+    }
+    .ba-validation-text{
+        font-size: .6rem;
+        color: $black18;
+    }
+    &.ba-error{
+        .ba-input{
+            transition: .2s;
+            border: 2px solid $red1;
+            background-color: $light8;
+            outline: 2px solid $red14;
+            color: $red1;
+            &::placeholder{
+                color: $red1;
+            }
+        }
+    }
+}
+
+// Normal
+.ba-input{
+    background-color: $light14;
+    border: 2px solid $light14;
+    outline: 2px solid $light14;
+    outline: none;
+    color: $light15;
+    padding: .6rem .8rem;
+    border-radius: 6px;
+    &::placeholder{
+        color: $light15;
+    }
+    &:focus{
+        transition: .2s;
+        border: 2px solid $blue4;
+        background-color: $light8;
+        outline: 2px solid $light18;
+    }
+    &.ba-error{
+        transition: .2s;
+        border: 2px solid $red1;
+        background-color: $light8;
+        outline: 2px solid $red14;
+        color: $red1;
+        &::placeholder{
+            color: $red1;
+        }
+    }
+    &:disabled{
+        cursor: not-allowed;
+    }
+}
+

@@ -1,0 +1,5 @@
+<template>
+    <svg xmlns="http://www.w3.org/2000/svg" width="29.399" height="17.676" viewBox="0 0 29.399 17.676">
+        <path id="list" d="M1.291,17.676a1.692,1.692,0,0,1,0-3.383H26.909a1.692,1.692,0,0,1,0,3.383Zm.4-7.147a1.691,1.691,0,1,1,0-3.382H27.309a1.691,1.691,0,1,1,0,3.382Zm0-7.147A1.691,1.691,0,1,1,1.692,0H27.309a1.691,1.691,0,1,1,0,3.382Z" transform="translate(0.4)" :fill="!$vuetify.theme.dark ? '#2c6bfe' : '#FFFFFF'"/>
+    </svg>
+</template>

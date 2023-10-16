@@ -1,0 +1,120 @@
+/* Avatars */
+
+// Variables
+$sizeSm: 32px;
+$sizeMd: 40px;
+$sizeLg: 48px;
+$sizeXl: 56px;
+
+// Mixin
+@mixin minMaxSize($size){
+    max-width: $size;
+    max-height: $size;
+    min-width: $size;
+    min-height: $size;
+}
+
+@mixin ba-notificationSizes($size,$top,$left){
+    width: $size;
+    height: $size;
+    margin-top: $top;
+    margin-left: $left;
+}
+
+// Style
+.ba-avatar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+
+    // Sizes
+    &.ba-sm{
+        .ba-image,.ba-letters{
+            @include minMaxSize($sizeSm);
+            font-size: .7rem;
+        }
+        .ba-image{
+            &.ba-notification::after{
+                @include ba-notificationSizes(8px,23px,-8px);
+            }
+        }
+        .ba-letters{
+            &.ba-notification::after{
+                @include ba-notificationSizes(8px,23px,23px);
+            }
+        }
+    }
+
+    &.ba-md{
+        .ba-image,.ba-letters{
+            @include minMaxSize($sizeMd);
+            font-size: 1rem;
+        }
+        .ba-notification::after{
+            @include ba-notificationSizes(10px,28px,-10px);
+        }
+        .ba-letters{
+            &.ba-notification::after{
+                @include ba-notificationSizes(10px,28px,28px);
+            }
+        }
+    }
+
+    &.ba-lg{
+        .ba-image,.ba-letters{
+            @include minMaxSize($sizeLg);
+            font-size: 1.2rem;
+        }
+        .ba-notification::after{
+            @include ba-notificationSizes(12px,34px,-12px);
+        }
+        .ba-letters{
+            &.ba-notification::after{
+                @include ba-notificationSizes(12px,34px,34px);
+            }
+        }
+    }
+
+    &.ba-xl{
+        .ba-image,.ba-letters{
+            @include minMaxSize($sizeXl);
+            font-size: 1.4rem;
+        }
+        .ba-notification::after{
+            @include ba-notificationSizes(14px,39px,-13px);
+
+        }
+        .ba-letters{
+            &.ba-notification::after{
+                @include ba-notificationSizes(14px,39px,39px);
+            }
+        }
+    }
+
+    // Style Configurations
+    .ba-image img,.ba-letters{
+        border-radius: 50%;
+        background-color: $light13;
+    }
+    .ba-image{
+        img{
+            width: -webkit-fill-available !important;
+            padding: .4rem;
+        }
+    }
+    .ba-letters{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $blue1;
+        font-size: 1.3rem;
+        padding: 0;
+    }
+    .ba-notification::after{
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+        background-color: $red3;
+    }
+}

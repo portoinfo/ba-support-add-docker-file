@@ -1,0 +1,106 @@
+/* Buttons */
+
+// Default button
+.ba-btn{
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: .4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .6rem;
+    padding: .4rem .8rem;
+    font-size: 0.75rem;
+    
+    // Sizes
+    &.ba-sm{
+        padding: .4rem .8rem;
+        font-size: 0.75rem;
+    }
+
+    &.ba-md{
+        padding: .6rem 1.2rem;
+        font-size: 0.8rem;
+    }
+
+    &.ba-lg{
+        padding: .8rem 1.6rem;
+        font-size: .85rem;
+    }
+
+    &.ba-xl{
+        padding: 1rem 2rem;
+        font-size: .9rem;
+    }
+
+    // Colors
+    &.ba-blue{
+        background-color: $blue1;
+        color: $white1;
+    }
+
+    &.ba-blue:hover{
+        background-color: $blue3;
+        box-shadow: 0px 5px 20px $rgba2;
+    }
+
+    &.ba-green{
+        background-color: $green16;
+        color: $white1;
+    }
+
+    &.ba-green:hover{
+        box-shadow: 0px 5px 20px $rgba4;
+    }
+
+    &.ba-red{
+        background-color: $red1;
+        color: $white1;
+    }
+
+    &.ba-red:hover{
+        background-color: $red12;
+        box-shadow: 0px 5px 20px $rgba3;
+    }
+
+    &.ba-dark{
+        background-color: $black11;
+        color: $white1;
+    }
+
+    &.ba-dark:hover{
+        box-shadow: 0px 5px 20px $rgba6;
+    }
+
+    &.ba-light{
+        background-color: $light7;
+        color: $black11;
+    }
+
+    &.ba-light:hover{
+        box-shadow: 0px 5px 20px $rgba5;
+    }
+
+    // Disabled
+    &.ba-disabled{
+        filter: opacity(0.5) !important;
+        cursor: not-allowed !important;
+    }
+
+    // Rounded
+    &.ba-rounded{
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg{
+            position: absolute;
+        }
+    }
+}

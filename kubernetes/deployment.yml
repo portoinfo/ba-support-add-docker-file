@@ -1,0 +1,71 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ba-support
+  namespace: helpdesk
+spec:
+  ports:
+  - port: 80
+  selector:
+    app: ba-support
+  type: ClusterIP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ba-support
+  annotations:
+    keel.sh/policy: force
+  namespace: helpdesk
+  labels:
+    app: ba-support
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ba-support
+  template:
+    metadata:
+      labels:
+        app: ba-support
+    spec:
+      containers:
+      - name:  ba-support
+        image: docker.io/baimages/helpdesk:unstable
+        imagePullPolicy: Always
+        envFrom:
+          - configMapRef:
+              name: ba-support
+          # - secretRef:
+          #     name: ba-support
+        ports:
+        - containerPort: 80
+        resources:
+          limits:
+            cpu: "2"
+            memory: 2Gi
+          requests:
+            cpu: 500m
+            memory: 200Mi
+        # volumeMounts:
+        #   - name: key-private
+        #     mountPath: "/var/www/storage/oauth-private.key"
+        #     subPath: "oauth-private.key"
+        #     readOnly: true
+        #   - name: key-public
+        #     mountPath: "/var/www/storage/oauth-public.key"
+        #     subPath: "oauth-public.key"
+        #     readOnly: true
+      # volumes:
+      #   - name: key-private
+      #     secret:
+      #       secretName: oauth-keys
+      #       items:
+      #          - key: oauth-private.key
+      #            path: oauth-private.key
+      #   - name: key-public
+      #     secret:
+      #       secretName: oauth-keys
+      #       items:
+      #          - key: oauth-public.key
+      #            path: oauth-public.key

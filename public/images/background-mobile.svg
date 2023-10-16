@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="434" height="927" viewBox="0 0 434 927">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_826" data-name="Retângulo 826" width="428" height="926" transform="translate(-22547 -9895)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="Retângulo_829" data-name="Retângulo 829" width="428" height="926" transform="translate(-22541 -9894)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_4427" data-name="Grupo 4427" transform="translate(22547 9895)">
+    <g id="Retângulo_831" data-name="Retângulo 831" transform="translate(-22547 -9895)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="428" height="926" stroke="none"/>
+      <rect x="0.5" y="0.5" width="427" height="925" fill="none"/>
+    </g>
+    <ellipse id="Elipse_7" data-name="Elipse 7" cx="101" cy="101.5" rx="101" ry="101.5" transform="translate(-22339 -9406)" fill="#fff" opacity="0.1"/>
+    <g id="Caminho_6" data-name="Caminho 6" transform="translate(-22336.117 -9868.094)" fill="none" opacity="0.1">
+      <path d="M55.719,0A55.719,55.719,0,1,1,0,55.719,55.719,55.719,0,0,1,55.719,0Z" stroke="none"/>
+      <path d="M 55.71892166137695 9.999992370605469 C 30.50942230224609 9.999992370605469 9.999992370605469 30.50942230224609 9.999992370605469 55.71892166137695 C 9.999992370605469 80.92842102050781 30.50942230224609 101.4378509521484 55.71892166137695 101.4378509521484 C 80.92842102050781 101.4378509521484 101.4378509521484 80.92842102050781 101.4378509521484 55.71892166137695 C 101.4378509521484 30.50942230224609 80.92842102050781 9.999992370605469 55.71892166137695 9.999992370605469 M 55.71892166137695 -7.62939453125e-06 C 86.49163818359375 -7.62939453125e-06 111.4378509521484 24.94620513916016 111.4378509521484 55.71892166137695 C 111.4378509521484 86.49163818359375 86.49163818359375 111.4378509521484 55.71892166137695 111.4378509521484 C 24.94620513916016 111.4378509521484 -7.62939453125e-06 86.49163818359375 -7.62939453125e-06 55.71892166137695 C -7.62939453125e-06 24.94620513916016 24.94620513916016 -7.62939453125e-06 55.71892166137695 -7.62939453125e-06 Z" stroke="none" fill="#fff"/>
+    </g>
+    <path id="Caminho_3" data-name="Caminho 3" d="M0,3.542s3.836-7.969,11.805,0,12.368,0,12.368,0,5.851-6.891,12.742,0,10.306,0,14.054,0" transform="translate(-22534.801 -9130.992) rotate(-43)" fill="none" stroke="#fff" stroke-width="3"/>
+    <path id="Caminho_2" data-name="Caminho 2" d="M0,3.49s3.78-7.853,11.633,0,12.187,0,12.187,0,5.765-6.791,12.556,0,10.156,0,13.849,0" transform="matrix(0.391, 0.921, -0.921, 0.391, -22521.684, -9601.792)" fill="none" stroke="#fff" stroke-width="3"/>
+    <path id="Caminho_5" data-name="Caminho 5" d="M0,3.49s3.78-7.853,11.633,0,12.187,0,12.187,0,5.765-6.791,12.556,0,10.156,0,13.849,0" transform="matrix(0.921, 0.391, -0.391, 0.921, -22182.498, -9628.215)" fill="none" stroke="#fff" stroke-width="3"/>
+    <g id="Grupo_de_máscara_6" data-name="Grupo de máscara 6" clip-path="url(#clip-path)">
+      <ellipse id="Elipse_2" data-name="Elipse 2" cx="158" cy="157.5" rx="158" ry="157.5" transform="translate(-22333 -9133)" fill="#efcb8f"/>
+    </g>
+    <g id="Grupo_de_máscara_7" data-name="Grupo de máscara 7" clip-path="url(#clip-path)">
+      <circle id="Elipse_1" data-name="Elipse 1" cx="265.5" cy="265.5" r="265.5" transform="translate(-22823 -10261)" fill="#ecb081"/>
+    </g>
+    <g id="Grupo_de_máscara_8" data-name="Grupo de máscara 8" clip-path="url(#clip-path-3)">
+      <circle id="Elipse_4" data-name="Elipse 4" cx="101.5" cy="101.5" r="101.5" transform="translate(-22716 -9996)" fill="#fff" opacity="0.1"/>
+    </g>
+    <g id="Grupo_de_máscara_9" data-name="Grupo de máscara 9" clip-path="url(#clip-path-3)">
+      <circle id="Elipse_3" data-name="Elipse 3" cx="101.5" cy="101.5" r="101.5" transform="translate(-22643 -9172)" fill="#bce0fd" opacity="0.4"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,39 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: laravel-app
+    ports:
+      - "8000:9000" # Mapeie a porta 8000 do host para a porta 9000 do contêiner (ajuste conforme necessário)
+    volumes:
+      - .:/var/www/html
+    networks:
+      - laravel-network
+    environment:
+      - APP_ENV=local
+      - APP_DEBUG=true
+      - APP_KEY=base64:UZ8pK+hqYqOFJNgPI3wgKGgf8hqptm27D2G7dHvdttw= # Substitua pelo valor da sua chave de aplicativo Laravel
+      - DB_CONNECTION=mysql
+      - DB_HOST=127.0.0.1 # Substitua pelo host do seu banco de dados PostgreSQL
+      - DB_PORT=3306
+      - DB_DATABASE=ba_support # Substitua pelo nome do seu banco de dados
+      - DB_USERNAME=root # Substitua pelo nome de usuário do banco de dados
+      - DB_PASSWORD= # Substitua pela senha do banco de dados
+    command: >
+      # /bin/bash -c "
+      # $(php generate_env.php)
+      # php-fpm"
+      
+    websocket:
+      image: beyondcode/laravel-websockets
+      container_name: laravel-websockets
+      ports:
+        - "6002:6002"
+      networks:
+        - laravel-network
+      command: php artisan websockets:serve --port 6002
+
+networks:
+  laravel-network:

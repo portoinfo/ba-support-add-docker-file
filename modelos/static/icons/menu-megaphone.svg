@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28.125" height="31.878" viewBox="0 0 28.125 31.878">
+  <g id="megaphone" transform="translate(-30.136 0)">
+    <path id="Caminho_1572" data-name="Caminho 1572" d="M231.786,17.081,219.352,4.646a1.869,1.869,0,1,0-2.643,2.642l12.435,12.434a1.868,1.868,0,1,0,2.641-2.641Z" transform="translate(-174.445 -3.846)" fill="#0f7bff"/>
+    <path id="Caminho_1573" data-name="Caminho 1573" d="M142.016,82.905l-.094.469a20.078,20.078,0,0,1-4.428,8.969l6.765,6.765a20.011,20.011,0,0,1,8.925-4.471l.47-.094Z" transform="translate(-100.674 -77.742)" fill="#0f7bff"/>
+    <path id="Caminho_1574" data-name="Caminho 1574" d="M35.58,256.989l-4.623,4.622a2.8,2.8,0,0,0,0,3.963l2.641,2.641a2.8,2.8,0,0,0,3.963,0l4.623-4.623Zm.66,7.265a.934.934,0,0,1-1.321-1.321l1.321-1.321a.934.934,0,1,1,1.321,1.321Z" transform="translate(0 -240.988)" fill="#0f7bff"/>
+    <path id="Caminho_1575" data-name="Caminho 1575" d="M197.694,352.252l1.27-1.27a2.8,2.8,0,0,0,0-3.962l-.944-.944a17.7,17.7,0,0,0-1.5,1.137l1.127,1.129a.932.932,0,0,1,0,1.32l-1.291,1.291-1.9-1.839-2.641,2.641,4.237,4.106a1.868,1.868,0,0,0,2.64-2.643Z" transform="translate(-151.611 -324.527)" fill="#70b0ff"/>
+    <g id="Grupo_3626" data-name="Grupo 3626" transform="translate(48.922 0)">
+      <path id="Caminho_1577" data-name="Caminho 1577" d="M424.666,120H422.8a.934.934,0,1,0,0,1.868h1.868a.934.934,0,1,0,0-1.868Z" transform="translate(-416.261 -112.528)" fill="#70b0ff"/>
+      <path id="Caminho_1578" data-name="Caminho 1578" d="M395.326,30.273a.934.934,0,0,0-1.321,0l-1.868,1.868a.934.934,0,1,0,1.321,1.321l1.868-1.868A.934.934,0,0,0,395.326,30.273Z" transform="translate(-388.129 -28.132)" fill="#70b0ff"/>
+      <path id="Caminho_1576" data-name="Caminho 1576" d="M332.8,0a.933.933,0,0,0-.934.934V2.8a.934.934,0,1,0,1.868,0V.934A.933.933,0,0,0,332.8,0Z" transform="translate(-331.864)" fill="#70b0ff"/>
+    </g>
+  </g>
+</svg>
